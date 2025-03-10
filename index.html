@@ -1,381 +1,3688 @@
 <!DOCTYPE html>
-<html lang="sk">
- 
+<html lang="sk-SK">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        img:is([sizes="auto" i], [sizes^="auto," i]) {
+            contain-intrinsic-size: 3000px 1500px
+        }
+    </style>
+    <link rel="apple-touch-icon" sizes="512x512" href="/logo/android-chrome-512x512-1.png">
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="/logo/android-chrome-192x192-1.png">
+
     <meta name="description"
         content="Pepecoin (PEP) je rýchla a decentralizovaná kryptomena postavená na Proof of Work. Pripojte sa k ťažbe, obchodujte na burzách a objavte svet Pepecoinu!">
     <meta name="keywords" content="Pepecoin, PEP, kryptomena, blockchain, ťažba, krypto, decentralizácia">
-    <meta name="author" content="Pepecoin Community">
-    <meta property="og:title" content="Pepecoin (PEP) - Budúcnosť kryptomien">
+    <meta name="robots" content="follow, index" />
+    <link rel="canonical" href="https://pepecoin.sk/" />
+    <meta property="og:locale" content="sk_SK" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pepecoin (PEP) - Budúcnosť kryptomien" />
     <meta property="og:description"
-        content="Pepecoin (PEP) je kryptomena s nízkymi poplatkami a rýchlymi transakciami. Zistite viac o jej ekosystéme!">
-    <meta property="og:image" content="https://pepecoin.sk/pep-logo.png">
-    <meta property="og:url" content="https://pepecoin.sk">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pepecoin (PEP) - Budúcnosť kryptomien">
-    <meta name="twitter:description" content="Zistite viac o Pepecoine, jeho ťažbe a ekosystéme!">
-    <meta name="twitter:image" content="https://pepecoin.sk/pep-logo.png">
-    <link rel="icon" href="/favicon.png" type="image/png">
-    <link rel="apple-touch-icon" href="/favicon-apple.png">
-    <title>Pepecoin (PEP) - Budúcnosť kryptomien</title>
+        content="Pepecoin (PEP) je rýchla a decentralizovaná kryptomena postavená na Proof of Work. Pripojte sa k ťažbe, obchodujte na burzách a objavte svet Pepecoinu!" />
+    <meta property="og:url" content="https://pepecoin.sk/" />
+    <meta property="og:site_name" content="Pepecoin (PEP) - Budúcnosť kryptomien" />
+    <meta property="og:image" content="/logo/pepecoin.png" />
+    <meta property="og:image:secure_url" content="/logo/pepecoin.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Pepecoin (PEP) - Budúcnosť kryptomien" />
+    <meta name="twitter:description"
+        content="Pepecoin (PEP) je rýchla a decentralizovaná kryptomena postavená na Proof of Work. Pripojte sa k ťažbe, obchodujte na burzách a objavte svet Pepecoinu!" />
+    <meta name="twitter:image" content="/logo/pepecoin.png" />
+    <link rel='stylesheet' href='/styles/style.min.mobile.css' />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <title>Pepecoin (PEP) - Budúcnosť kryptomien</title>
+    <style id='wp-block-heading-inline-css'>
+        h1.has-background,
+        h2.has-background,
+        h3.has-background,
+        h4.has-background,
+        h5.has-background,
+        h6.has-background {
+            padding: 1.25em 2.375em
+        }
+
+        h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+        h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+        h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+        h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+        h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+        h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+        h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+        h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+        h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+        h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+        h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+        h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]) {
+            rotate: 180deg
+        }
+    </style>
+    <style id='wp-block-navigation-link-inline-css'>
+        .wp-block-navigation .wp-block-navigation-item__label {
+            overflow-wrap: break-word
+        }
+
+        .wp-block-navigation .wp-block-navigation-item__description {
+            display: none
+        }
+
+        .link-ui-tools {
+            border-top: 1px solid #f0f0f0;
+            padding: 8px
+        }
+
+        .link-ui-block-inserter {
+            padding-top: 8px
+        }
+
+        .link-ui-block-inserter__back {
+            margin-left: 8px;
+            text-transform: uppercase
+        }
+    </style>
+    <style id='wp-block-button-inline-css'>
+        .wp-block-button__link {
+            box-sizing: border-box;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            word-break: break-word
+        }
+
+        .wp-block-button__link.aligncenter {
+            text-align: center
+        }
+
+        .wp-block-button__link.alignright {
+            text-align: right
+        }
+
+        :where(.wp-block-button__link) {
+            border-radius: 9999px;
+            box-shadow: none;
+            padding: calc(.667em + 2px) calc(1.333em + 2px);
+            text-decoration: none
+        }
+
+        .wp-block-button[style*=text-decoration] .wp-block-button__link {
+            text-decoration: inherit
+        }
+
+        .wp-block-buttons>.wp-block-button.has-custom-width {
+            max-width: none
+        }
+
+        .wp-block-buttons>.wp-block-button.has-custom-width .wp-block-button__link {
+            width: 100%
+        }
+
+        .wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link {
+            font-size: inherit
+        }
+
+        .wp-block-buttons>.wp-block-button.wp-block-button__width-25 {
+            width: calc(25% - var(--wp--style--block-gap, .5em)*.75)
+        }
+
+        .wp-block-buttons>.wp-block-button.wp-block-button__width-50 {
+            width: calc(50% - var(--wp--style--block-gap, .5em)*.5)
+        }
+
+        .wp-block-buttons>.wp-block-button.wp-block-button__width-75 {
+            width: calc(75% - var(--wp--style--block-gap, .5em)*.25)
+        }
+
+        .wp-block-buttons>.wp-block-button.wp-block-button__width-100 {
+            flex-basis: 100%;
+            width: 100%
+        }
+
+        .wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-25 {
+            width: 25%
+        }
+
+        .wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-50 {
+            width: 50%
+        }
+
+        .wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-75 {
+            width: 75%
+        }
+
+        .wp-block-button.is-style-squared,
+        .wp-block-button__link.wp-block-button.is-style-squared {
+            border-radius: 0
+        }
+
+        .wp-block-button.no-border-radius,
+        .wp-block-button__link.no-border-radius {
+            border-radius: 0 !important
+        }
+
+        :root :where(.wp-block-button .wp-block-button__link.is-style-outline),
+        :root :where(.wp-block-button.is-style-outline>.wp-block-button__link) {
+            border: 2px solid;
+            padding: .667em 1.333em
+        }
+
+        :root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color)),
+        :root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color)) {
+            color: currentColor
+        }
+
+        :root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background)),
+        :root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background)) {
+            background-color: initial;
+            background-image: none
+        }
+    </style>
+    <style id='wp-block-buttons-inline-css'>
+        .wp-block-buttons.is-vertical {
+            flex-direction: column
+        }
+
+        .wp-block-buttons.is-vertical>.wp-block-button:last-child {
+            margin-bottom: 0
+        }
+
+        .wp-block-buttons>.wp-block-button {
+            display: inline-block;
+            margin: 0
+        }
+
+        .wp-block-buttons.is-content-justification-left {
+            justify-content: flex-start
+        }
+
+        .wp-block-buttons.is-content-justification-left.is-vertical {
+            align-items: flex-start
+        }
+
+        .wp-block-buttons.is-content-justification-center {
+            justify-content: center
+        }
+
+        .wp-block-buttons.is-content-justification-center.is-vertical {
+            align-items: center
+        }
+
+        .wp-block-buttons.is-content-justification-right {
+            justify-content: flex-end
+        }
+
+        .wp-block-buttons.is-content-justification-right.is-vertical {
+            align-items: flex-end
+        }
+
+        .wp-block-buttons.is-content-justification-space-between {
+            justify-content: space-between
+        }
+
+        .wp-block-buttons.aligncenter {
+            text-align: center
+        }
+
+        .wp-block-buttons:not(.is-content-justification-space-between, .is-content-justification-right, .is-content-justification-left, .is-content-justification-center) .wp-block-button.aligncenter {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%
+        }
+
+        .wp-block-buttons[style*=text-decoration] .wp-block-button,
+        .wp-block-buttons[style*=text-decoration] .wp-block-button__link {
+            text-decoration: inherit
+        }
+
+        .wp-block-buttons.has-custom-font-size .wp-block-button__link {
+            font-size: inherit
+        }
+
+        .wp-block-button.aligncenter {
+            text-align: center
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-navigation-css' href='/styles/style.min.navigation.css' media='all' />
+    <style id='wp-block-group-inline-css'>
+        .wp-block-group {
+            box-sizing: border-box
+        }
+
+        :where(.wp-block-group.wp-block-group-is-layout-constrained) {
+            position: relative
+        }
+    </style>
+    <style id='wp-block-group-theme-inline-css'>
+        :where(.wp-block-group.has-background) {
+            padding: 1.25em 2.375em
+        }
+    </style>
+    <style id='wp-block-template-part-theme-inline-css'>
+        :root :where(.wp-block-template-part.has-background) {
+            margin-bottom: 0;
+            margin-top: 0;
+            padding: 1.25em 2.375em
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-image-css' href='/styles/style.min.css' media='all' />
+    <style id='wp-block-image-theme-inline-css'>
+        :root :where(.wp-block-image figcaption) {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme :root :where(.wp-block-image figcaption) {
+            color: #ffffffa6
+        }
+
+        .wp-block-image {
+            margin: 0 0 1em
+        }
+    </style>
+    <style id='wp-block-paragraph-inline-css'>
+        .is-small-text {
+            font-size: .875em
+        }
+
+        .is-regular-text {
+            font-size: 1em
+        }
+
+        .is-large-text {
+            font-size: 2.25em
+        }
+
+        .is-larger-text {
+            font-size: 3em
+        }
+
+        .has-drop-cap:not(:focus):first-letter {
+            float: left;
+            font-size: 8.4em;
+            font-style: normal;
+            font-weight: 100;
+            line-height: .68;
+            margin: .05em .1em 0 0;
+            text-transform: uppercase
+        }
+
+        body.rtl .has-drop-cap:not(:focus):first-letter {
+            float: none;
+            margin-left: .1em
+        }
+
+        p.has-drop-cap.has-background {
+            overflow: hidden
+        }
+
+        :root :where(p.has-background) {
+            padding: 1.25em 2.375em
+        }
+
+        :where(p.has-text-color:not(.has-link-color)) a {
+            color: inherit
+        }
+
+        p.has-text-align-left[style*="writing-mode:vertical-lr"],
+        p.has-text-align-right[style*="writing-mode:vertical-rl"] {
+            rotate: 180deg
+        }
+    </style>
+    <style id='wp-block-search-inline-css'>
+        .wp-block-search__button {
+            margin-left: 10px;
+            word-break: normal
+        }
+
+        .wp-block-search__button.has-icon {
+            line-height: 0
+        }
+
+        .wp-block-search__button svg {
+            height: 1.25em;
+            min-height: 24px;
+            min-width: 24px;
+            width: 1.25em;
+            fill: currentColor;
+            vertical-align: text-bottom
+        }
+
+        :where(.wp-block-search__button) {
+            border: 1px solid #ccc;
+            padding: 6px 10px
+        }
+
+        .wp-block-search__inside-wrapper {
+            display: flex;
+            flex: auto;
+            flex-wrap: nowrap;
+            max-width: 100%
+        }
+
+        .wp-block-search__label {
+            width: 100%
+        }
+
+        .wp-block-search__input {
+            appearance: none;
+            border: 1px solid #949494;
+            flex-grow: 1;
+            margin-left: 0;
+            margin-right: 0;
+            min-width: 3rem;
+            padding: 8px;
+            text-decoration: unset !important
+        }
+
+        .wp-block-search.wp-block-search__button-only .wp-block-search__button {
+            flex-shrink: 0;
+            margin-left: 0;
+            max-width: 100%
+        }
+
+        .wp-block-search.wp-block-search__button-only .wp-block-search__button[aria-expanded=true] {
+            max-width: calc(100% - 100px)
+        }
+
+        .wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper {
+            min-width: 0 !important;
+            transition-property: width
+        }
+
+        .wp-block-search.wp-block-search__button-only .wp-block-search__input {
+            flex-basis: 100%;
+            transition-duration: .3s
+        }
+
+        .wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden,
+        .wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__inside-wrapper {
+            overflow: hidden
+        }
+
+        .wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__input {
+            border-left-width: 0 !important;
+            border-right-width: 0 !important;
+            flex-basis: 0;
+            flex-grow: 0;
+            margin: 0;
+            min-width: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            width: 0 !important
+        }
+
+        :where(.wp-block-search__input) {
+            font-family: inherit;
+            font-size: inherit;
+            font-style: inherit;
+            font-weight: inherit;
+            letter-spacing: inherit;
+            line-height: inherit;
+            text-transform: inherit
+        }
+
+        :where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) {
+            border: 1px solid #949494;
+            box-sizing: border-box;
+            padding: 4px
+        }
+
+        :where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input {
+            border: none;
+            border-radius: 0;
+            padding: 0 4px
+        }
+
+        :where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input:focus {
+            outline: none
+        }
+
+        :where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) :where(.wp-block-search__button) {
+            padding: 4px 8px
+        }
+
+        .wp-block-search.aligncenter .wp-block-search__inside-wrapper {
+            margin: auto
+        }
+
+        .wp-block[data-align=right] .wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper {
+            float: right
+        }
+
+        .is-style-FWP_-search-minimal .wp-block-search__input {
+            padding: var(--wp--preset--spacing--spacing-16);
+            color: var(--wp--preset--color--primary-800);
+            background-color: var(--wp--preset--color--white);
+            line-height: 1;
+            border: 0;
+        }
+
+        .is-style-FWP_-search-minimal.wp-block-search__button-outside {
+            background-color: var(--wp--preset--color--white);
+            border-radius: var(--wp--preset--spacing--spacing-64);
+        }
+
+        .is-style-FWP_-search-minimal .wp-block-search__button-outside:focus-visible,
+        .is-style-FWP_-search-minimal .wp-block-search__button-outside .wp-block-search__inside-wrapper:focus-visible {
+            outline: none;
+        }
+
+        .is-style-FWP_-search-minimal.wp-block-search__button-outside .wp-block-search__inside-wrapper input:focus-visible {
+            outline: 0;
+        }
+
+        .is-style-FWP_-search-minimal.wp-block-search__button-outside .wp-block-search__inside-wrapper {
+            height: 50px;
+        }
+
+        .is-style-FWP_-search-minimal.wp-block-search__button-outside .wp-block-search__inside-wrapper .wp-block-search__button {
+            width: 120px;
+        }
+
+        .is-style-FWP_-search-minimal.wp-block-search__button-outside .wp-block-search__inside-wrapper .wp-block-search__button svg {
+            margin-top: -3px;
+        }
+
+        .is-style-FWP_-search-minimal.wp-block-search__button-outside .wp-block-search__label {
+            display: none;
+        }
+
+        .is-style-FWP_-search-minimal.wp-block-search__button-outside .wp-block-search__input {
+            border-radius: var(--wp--preset--spacing--spacing-64);
+        }
+    </style>
+    <style id='wp-block-search-theme-inline-css'>
+        .wp-block-search .wp-block-search__label {
+            font-weight: 700
+        }
+
+        .wp-block-search__button {
+            border: 1px solid #ccc;
+            padding: .375em .625em
+        }
+    </style>
+    <style id='wp-block-columns-inline-css'>
+        .wp-block-columns {
+            align-items: normal !important;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap !important
+        }
+
+        @media (min-width:782px) {
+            .wp-block-columns {
+                flex-wrap: nowrap !important
+            }
+        }
+
+        .wp-block-columns.are-vertically-aligned-top {
+            align-items: flex-start
+        }
+
+        .wp-block-columns.are-vertically-aligned-center {
+            align-items: center
+        }
+
+        .wp-block-columns.are-vertically-aligned-bottom {
+            align-items: flex-end
+        }
+
+        @media (max-width:781px) {
+            .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column {
+                flex-basis: 100% !important
+            }
+        }
+
+        @media (min-width:782px) {
+            .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column {
+                flex-basis: 0;
+                flex-grow: 1
+            }
+
+            .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis] {
+                flex-grow: 0
+            }
+        }
+
+        .wp-block-columns.is-not-stacked-on-mobile {
+            flex-wrap: nowrap !important
+        }
+
+        .wp-block-columns.is-not-stacked-on-mobile>.wp-block-column {
+            flex-basis: 0;
+            flex-grow: 1
+        }
+
+        .wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis] {
+            flex-grow: 0
+        }
+
+        :where(.wp-block-columns) {
+            margin-bottom: 1.75em
+        }
+
+        :where(.wp-block-columns.has-background) {
+            padding: 1.25em 2.375em
+        }
+
+        .wp-block-column {
+            flex-grow: 1;
+            min-width: 0;
+            overflow-wrap: break-word;
+            word-break: break-word
+        }
+
+        .wp-block-column.is-vertically-aligned-top {
+            align-self: flex-start
+        }
+
+        .wp-block-column.is-vertically-aligned-center {
+            align-self: center
+        }
+
+        .wp-block-column.is-vertically-aligned-bottom {
+            align-self: flex-end
+        }
+
+        .wp-block-column.is-vertically-aligned-stretch {
+            align-self: stretch
+        }
+
+        .wp-block-column.is-vertically-aligned-bottom,
+        .wp-block-column.is-vertically-aligned-center,
+        .wp-block-column.is-vertically-aligned-top {
+            width: 100%
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-social-links-css' href='/styles/style.min.social.css' media='all' />
+    <style id='wp-block-spacer-inline-css'>
+        .wp-block-spacer {
+            clear: both
+        }
+    </style>
+    <style id='wp-emoji-styles-inline-css'>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <style id='wp-block-library-inline-css'>
+        :root {
+            --wp-admin-theme-color: #007cba;
+            --wp-admin-theme-color--rgb: 0, 124, 186;
+            --wp-admin-theme-color-darker-10: #006ba1;
+            --wp-admin-theme-color-darker-10--rgb: 0, 107, 161;
+            --wp-admin-theme-color-darker-20: #005a87;
+            --wp-admin-theme-color-darker-20--rgb: 0, 90, 135;
+            --wp-admin-border-width-focus: 2px;
+            --wp-block-synced-color: #7a00df;
+            --wp-block-synced-color--rgb: 122, 0, 223;
+            --wp-bound-block-color: var(--wp-block-synced-color)
+        }
+
+        @media (min-resolution:192dpi) {
+            :root {
+                --wp-admin-border-width-focus: 1.5px
+            }
+        }
+
+        .wp-element-button {
+            cursor: pointer
+        }
+
+        :root {
+            --wp--preset--font-size--normal: 16px;
+            --wp--preset--font-size--huge: 42px
+        }
+
+        :root .has-very-light-gray-background-color {
+            background-color: #eee
+        }
+
+        :root .has-very-dark-gray-background-color {
+            background-color: #313131
+        }
+
+        :root .has-very-light-gray-color {
+            color: #eee
+        }
+
+        :root .has-very-dark-gray-color {
+            color: #313131
+        }
+
+        :root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background {
+            background: linear-gradient(135deg, #00d084, #0693e3)
+        }
+
+        :root .has-purple-crush-gradient-background {
+            background: linear-gradient(135deg, #34e2e4, #4721fb 50%, #ab1dfe)
+        }
+
+        :root .has-hazy-dawn-gradient-background {
+            background: linear-gradient(135deg, #faaca8, #dad0ec)
+        }
+
+        :root .has-subdued-olive-gradient-background {
+            background: linear-gradient(135deg, #fafae1, #67a671)
+        }
+
+        :root .has-atomic-cream-gradient-background {
+            background: linear-gradient(135deg, #fdd79a, #004a59)
+        }
+
+        :root .has-nightshade-gradient-background {
+            background: linear-gradient(135deg, #330968, #31cdcf)
+        }
+
+        :root .has-midnight-gradient-background {
+            background: linear-gradient(135deg, #020381, #2874fc)
+        }
+
+        .has-regular-font-size {
+            font-size: 1em
+        }
+
+        .has-larger-font-size {
+            font-size: 2.625em
+        }
+
+        .has-normal-font-size {
+            font-size: var(--wp--preset--font-size--normal)
+        }
+
+        .has-huge-font-size {
+            font-size: var(--wp--preset--font-size--huge)
+        }
+
+        .has-text-align-center {
+            text-align: center
+        }
+
+        .has-text-align-left {
+            text-align: left
+        }
+
+        .has-text-align-right {
+            text-align: right
+        }
+
+        #end-resizable-editor-section {
+            display: none
+        }
+
+        .aligncenter {
+            clear: both
+        }
+
+        .items-justified-left {
+            justify-content: flex-start
+        }
+
+        .items-justified-center {
+            justify-content: center
+        }
+
+        .items-justified-right {
+            justify-content: flex-end
+        }
+
+        .items-justified-space-between {
+            justify-content: space-between
+        }
+
+        .screen-reader-text {
+            border: 0;
+            clip: rect(1px, 1px, 1px, 1px);
+            clip-path: inset(50%);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            word-wrap: normal !important
+        }
+
+        .screen-reader-text:focus {
+            background-color: #ddd;
+            clip: auto !important;
+            clip-path: none;
+            color: #444;
+            display: block;
+            font-size: 1em;
+            height: auto;
+            left: 5px;
+            line-height: normal;
+            padding: 15px 23px 14px;
+            text-decoration: none;
+            top: 5px;
+            width: auto;
+            z-index: 100000
+        }
+
+        html :where(.has-border-color) {
+            border-style: solid
+        }
+
+        html :where([style*=border-top-color]) {
+            border-top-style: solid
+        }
+
+        html :where([style*=border-right-color]) {
+            border-right-style: solid
+        }
+
+        html :where([style*=border-bottom-color]) {
+            border-bottom-style: solid
+        }
+
+        html :where([style*=border-left-color]) {
+            border-left-style: solid
+        }
+
+        html :where([style*=border-width]) {
+            border-style: solid
+        }
+
+        html :where([style*=border-top-width]) {
+            border-top-style: solid
+        }
+
+        html :where([style*=border-right-width]) {
+            border-right-style: solid
+        }
+
+        html :where([style*=border-bottom-width]) {
+            border-bottom-style: solid
+        }
+
+        html :where([style*=border-left-width]) {
+            border-left-style: solid
+        }
+
+        html :where(img[class*=wp-image-]) {
+            height: auto;
+            max-width: 100%
+        }
+
+        :where(figure) {
+            margin: 0 0 1em
+        }
+
+        html :where(.is-position-sticky) {
+            --wp-admin--admin-bar--position-offset: var(--wp-admin--admin-bar--height, 0px)
+        }
+
+        @media screen and (max-width:600px) {
+            html :where(.is-position-sticky) {
+                --wp-admin--admin-bar--position-offset: 0px
+            }
+        }
+    </style>
+    <style id='global-styles-inline-css'>
+        :root {
+            --wp--preset--aspect-ratio--square: 1;
+            --wp--preset--aspect-ratio--4-3: 4/3;
+            --wp--preset--aspect-ratio--3-4: 3/4;
+            --wp--preset--aspect-ratio--3-2: 3/2;
+            --wp--preset--aspect-ratio--2-3: 2/3;
+            --wp--preset--aspect-ratio--16-9: 16/9;
+            --wp--preset--aspect-ratio--9-16: 9/16;
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #FFFFFF;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--color--base: #00F0E4;
+            --wp--preset--color--primary-50: #CCFFFC;
+            --wp--preset--color--primary-100: #B8FFFB;
+            --wp--preset--color--primary-200: #85FFF9;
+            --wp--preset--color--primary-300: #52FFF6;
+            --wp--preset--color--primary-400: #24FFF4;
+            --wp--preset--color--primary-600: #00C2B8;
+            --wp--preset--color--primary-700: #008F88;
+            --wp--preset--color--primary-800: #005C57;
+            --wp--preset--color--primary-950: #001514;
+            --wp--preset--color--tertiary: #E83E8C;
+            --wp--preset--color--neutral: #6A758E;
+            --wp--preset--color--neutral-50: #F0F1F4;
+            --wp--preset--color--neutral-100: #002E2C;
+            --wp--preset--color--neutral-200: #8891A5;
+            --wp--preset--color--neutral-700: #404655;
+            --wp--preset--color--pink: #FF00FF;
+            --wp--preset--color--purple: #6F42C1;
+            --wp--preset--color--warning: #F89B2E;
+            --wp--preset--color--success: #4CAF50;
+            --wp--preset--color--error: #E43242;
+            --wp--preset--color--error-50: #FCEBEC;
+            --wp--preset--color--body-purple: #CCFFFC;
+            --wp--preset--color--body-neutral: #CCFFFC;
+            --wp--preset--color--body-neutral-50: #F4F0FF;
+            --wp--preset--color--text-base: #090A11;
+            --wp--preset--color--heading: #FFFFFF;
+            --wp--preset--color--primary: #002E2C;
+            --wp--preset--color--custom-background: #212121;
+            --wp--preset--color--custom-on-background: #393939;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.619), 20px);
+            --wp--preset--font-size--large: clamp(22.041px, 1.378rem + ((1vw - 3.2px) * 1.439), 36px);
+            --wp--preset--font-size--x-large: clamp(25.014px, 1.563rem + ((1vw - 3.2px) * 1.751), 42px);
+            --wp--preset--font-size--h-1: clamp(42px, 2.625rem + ((1vw - 3.2px) * 3.093), 72px);
+            --wp--preset--font-size--h-2: clamp(36px, 2.25rem + ((1vw - 3.2px) * 2.68), 62px);
+            --wp--preset--font-size--h-3: clamp(32px, 2rem + ((1vw - 3.2px) * 1.649), 48px);
+            --wp--preset--font-size--h-4: clamp(28px, 1.75rem + ((1vw - 3.2px) * 1.443), 42px);
+            --wp--preset--font-size--h-5: clamp(24px, 1.5rem + ((1vw - 3.2px) * 0.825), 32px);
+            --wp--preset--font-size--h-6: clamp(20px, 1.25rem + ((1vw - 3.2px) * 0.412), 24px);
+            --wp--preset--font-size--p-1: clamp(18px, 1.125rem + ((1vw - 3.2px) * 1), 18px);
+            --wp--preset--font-size--p-2: clamp(16px, 1rem + ((1vw - 3.2px) * 1), 16px);
+            --wp--preset--font-size--p-3: clamp(14px, 0.875rem + ((1vw - 3.2px) * 1), 14px);
+            --wp--preset--font-size--custom-1: clamp(27.894px, 1.743rem + ((1vw - 3.2px) * 2.073), 48px);
+            --wp--preset--font-family--plus-jakarta: "Plus Jakarta ", sans-serif;
+            --wp--preset--font-family--work-sans: "Work Sans ", sans-serif;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--spacing--spacing-8: clamp(8px, 0.8vw, 8px);
+            --wp--preset--spacing--spacing-16: clamp(16px, 1.6vw, 16px);
+            --wp--preset--spacing--spacing-24: clamp(20px, 2.4vw, 24px);
+            --wp--preset--spacing--spacing-32: clamp(22px, 3.2vw, 32px);
+            --wp--preset--spacing--spacing-40: clamp(28px, 4vw, 40px);
+            --wp--preset--spacing--spacing-48: clamp(34px, 4.8vw, 48px);
+            --wp--preset--spacing--spacing-56: clamp(40px, 5.6vw, 56px);
+            --wp--preset--spacing--spacing-64: clamp(45px, 6.4vw, 64px);
+            --wp--preset--spacing--spacing-72: clamp(50px, 7.2vw, 72px);
+            --wp--preset--spacing--spacing-80: clamp(56px, 8vw, 80px);
+            --wp--preset--spacing--spacing-88: clamp(62px, 8.8vw, 88px);
+            --wp--preset--spacing--spacing-96: clamp(67px, 9.6vw, 96px);
+            --wp--preset--spacing--spacing-104: clamp(72px, 10.4vw, 104px);
+            --wp--preset--spacing--spacing-112: clamp(78px, 11.2vw, 112px);
+            --wp--preset--spacing--spacing-120: clamp(84px, 12vw, 120px);
+            --wp--preset--spacing--spacing-140: clamp(98px, 12vw, 140px);
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+            --wp--custom--font-family--body: var(--wp--preset--font-family--work-sans);
+        }
+
+        :root {
+            --wp--style--global--content-size: 856px;
+            --wp--style--global--wide-size: 1290px;
+        }
+
+        :where(body) {
+            margin: 0;
+        }
+
+        .wp-site-blocks {
+            padding-top: var(--wp--style--root--padding-top);
+            padding-bottom: var(--wp--style--root--padding-bottom);
+        }
+
+        .has-global-padding {
+            padding-right: var(--wp--style--root--padding-right);
+            padding-left: var(--wp--style--root--padding-left);
+        }
+
+        .has-global-padding>.alignfull {
+            margin-right: calc(var(--wp--style--root--padding-right) * -1);
+            margin-left: calc(var(--wp--style--root--padding-left) * -1);
+        }
+
+        .has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull))>.alignfull {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .wp-site-blocks>.alignleft {
+            float: left;
+            margin-right: 2em;
+        }
+
+        .wp-site-blocks>.alignright {
+            float: right;
+            margin-left: 2em;
+        }
+
+        .wp-site-blocks>.aligncenter {
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        :where(.wp-site-blocks)>* {
+            margin-block-start: var(--wp--preset--spacing--spacing-24);
+            margin-block-end: 0;
+        }
+
+        :where(.wp-site-blocks)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :where(.wp-site-blocks)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root {
+            --wp--style--block-gap: var(--wp--preset--spacing--spacing-24);
+        }
+
+        :root :where(.is-layout-flow)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :root :where(.is-layout-flow)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-flow)>* {
+            margin-block-start: var(--wp--preset--spacing--spacing-24);
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-constrained)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :root :where(.is-layout-constrained)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-constrained)>* {
+            margin-block-start: var(--wp--preset--spacing--spacing-24);
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-flex) {
+            gap: var(--wp--preset--spacing--spacing-24);
+        }
+
+        :root :where(.is-layout-grid) {
+            gap: var(--wp--preset--spacing--spacing-24);
+        }
+
+        .is-layout-flow>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        .is-layout-flow>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        .is-layout-flow>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        .is-layout-constrained>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        .is-layout-constrained>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+            max-width: var(--wp--style--global--content-size);
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained>.alignwide {
+            max-width: var(--wp--style--global--wide-size);
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .is-layout-flex> :is(*, div) {
+            margin: 0;
+        }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        .is-layout-grid> :is(*, div) {
+            margin: 0;
+        }
+
+        body {
+            background-color: var(--wp--preset--color--custom-background);
+            color: var(--wp--preset--color--white);
+            font-family: var(--wp--preset--font-family--work-sans);
+            font-size: var(--wp--preset--font-size--p-1);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.3;
+            --wp--style--root--padding-top: 0px;
+            --wp--style--root--padding-right: 0px;
+            --wp--style--root--padding-bottom: 0px;
+            --wp--style--root--padding-left: 0px;
+        }
+
+        a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+            text-decoration: none;
+        }
+
+        :root :where(a:where(:not(.wp-element-button)):hover) {
+            text-decoration: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--wp--preset--color--heading);
+            font-family: var(--wp--preset--font-family--plus-jakarta);
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: var(--wp--preset--font-size--h-1);
+        }
+
+        h2 {
+            font-size: var(--wp--preset--font-size--h-2);
+        }
+
+        h3 {
+            font-size: var(--wp--preset--font-size--h-3);
+        }
+
+        h4 {
+            font-size: var(--wp--preset--font-size--h-4);
+        }
+
+        h5 {
+            font-size: var(--wp--preset--font-size--h-5);
+        }
+
+        h6 {
+            font-size: var(--wp--preset--font-size--h-6);
+        }
+
+        :root :where(.wp-element-button, .wp-block-button__link) {
+            background-color: var(--wp--preset--color--custom-on-background);
+            border-radius: var(--wp--preset--spacing--spacing-104);
+            border-width: 0;
+            color: var(--wp--preset--color--white);
+            font-family: inherit;
+            font-size: var(--wp--preset--font-size--p-2);
+            line-height: inherit;
+            padding-top: var(--wp--preset--spacing--spacing-16);
+            padding-right: var(--wp--preset--spacing--spacing-32);
+            padding-bottom: var(--wp--preset--spacing--spacing-16);
+            padding-left: var(--wp--preset--spacing--spacing-32);
+            text-decoration: none;
+        }
+
+        :root :where(.wp-element-button:hover, .wp-block-button__link:hover) {
+            background-color: var(--wp--preset--color--base);
+            border-color: var(--wp--preset--color--base);
+            color: var(--wp--preset--color--white);
+        }
+
+        :root :where(.wp-element-button:focus, .wp-block-button__link:focus) {
+            outline-color: var(--wp--preset--color--base);
+            outline-offset: 2px;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-base-color {
+            color: var(--wp--preset--color--base) !important;
+        }
+
+        .has-primary-50-color {
+            color: var(--wp--preset--color--primary-50) !important;
+        }
+
+        .has-primary-100-color {
+            color: var(--wp--preset--color--primary-100) !important;
+        }
+
+        .has-primary-200-color {
+            color: var(--wp--preset--color--primary-200) !important;
+        }
+
+        .has-primary-300-color {
+            color: var(--wp--preset--color--primary-300) !important;
+        }
+
+        .has-primary-400-color {
+            color: var(--wp--preset--color--primary-400) !important;
+        }
+
+        .has-primary-600-color {
+            color: var(--wp--preset--color--primary-600) !important;
+        }
+
+        .has-primary-700-color {
+            color: var(--wp--preset--color--primary-700) !important;
+        }
+
+        .has-primary-800-color {
+            color: var(--wp--preset--color--primary-800) !important;
+        }
+
+        .has-primary-950-color {
+            color: var(--wp--preset--color--primary-950) !important;
+        }
+
+        .has-tertiary-color {
+            color: var(--wp--preset--color--tertiary) !important;
+        }
+
+        .has-neutral-color {
+            color: var(--wp--preset--color--neutral) !important;
+        }
+
+        .has-neutral-50-color {
+            color: var(--wp--preset--color--neutral-50) !important;
+        }
+
+        .has-neutral-100-color {
+            color: var(--wp--preset--color--neutral-100) !important;
+        }
+
+        .has-neutral-200-color {
+            color: var(--wp--preset--color--neutral-200) !important;
+        }
+
+        .has-neutral-700-color {
+            color: var(--wp--preset--color--neutral-700) !important;
+        }
+
+        .has-pink-color {
+            color: var(--wp--preset--color--pink) !important;
+        }
+
+        .has-purple-color {
+            color: var(--wp--preset--color--purple) !important;
+        }
+
+        .has-warning-color {
+            color: var(--wp--preset--color--warning) !important;
+        }
+
+        .has-success-color {
+            color: var(--wp--preset--color--success) !important;
+        }
+
+        .has-error-color {
+            color: var(--wp--preset--color--error) !important;
+        }
+
+        .has-error-50-color {
+            color: var(--wp--preset--color--error-50) !important;
+        }
+
+        .has-body-purple-color {
+            color: var(--wp--preset--color--body-purple) !important;
+        }
+
+        .has-body-neutral-color {
+            color: var(--wp--preset--color--body-neutral) !important;
+        }
+
+        .has-body-neutral-50-color {
+            color: var(--wp--preset--color--body-neutral-50) !important;
+        }
+
+        .has-text-base-color {
+            color: var(--wp--preset--color--text-base) !important;
+        }
+
+        .has-heading-color {
+            color: var(--wp--preset--color--heading) !important;
+        }
+
+        .has-primary-color {
+            color: var(--wp--preset--color--primary) !important;
+        }
+
+        .has-custom-background-color {
+            color: var(--wp--preset--color--custom-background) !important;
+        }
+
+        .has-custom-on-background-color {
+            color: var(--wp--preset--color--custom-on-background) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-base-background-color {
+            background-color: var(--wp--preset--color--base) !important;
+        }
+
+        .has-primary-50-background-color {
+            background-color: var(--wp--preset--color--primary-50) !important;
+        }
+
+        .has-primary-100-background-color {
+            background-color: var(--wp--preset--color--primary-100) !important;
+        }
+
+        .has-primary-200-background-color {
+            background-color: var(--wp--preset--color--primary-200) !important;
+        }
+
+        .has-primary-300-background-color {
+            background-color: var(--wp--preset--color--primary-300) !important;
+        }
+
+        .has-primary-400-background-color {
+            background-color: var(--wp--preset--color--primary-400) !important;
+        }
+
+        .has-primary-600-background-color {
+            background-color: var(--wp--preset--color--primary-600) !important;
+        }
+
+        .has-primary-700-background-color {
+            background-color: var(--wp--preset--color--primary-700) !important;
+        }
+
+        .has-primary-800-background-color {
+            background-color: var(--wp--preset--color--primary-800) !important;
+        }
+
+        .has-primary-950-background-color {
+            background-color: var(--wp--preset--color--primary-950) !important;
+        }
+
+        .has-tertiary-background-color {
+            background-color: var(--wp--preset--color--tertiary) !important;
+        }
+
+        .has-neutral-background-color {
+            background-color: var(--wp--preset--color--neutral) !important;
+        }
+
+        .has-neutral-50-background-color {
+            background-color: var(--wp--preset--color--neutral-50) !important;
+        }
+
+        .has-neutral-100-background-color {
+            background-color: var(--wp--preset--color--neutral-100) !important;
+        }
+
+        .has-neutral-200-background-color {
+            background-color: var(--wp--preset--color--neutral-200) !important;
+        }
+
+        .has-neutral-700-background-color {
+            background-color: var(--wp--preset--color--neutral-700) !important;
+        }
+
+        .has-pink-background-color {
+            background-color: var(--wp--preset--color--pink) !important;
+        }
+
+        .has-purple-background-color {
+            background-color: var(--wp--preset--color--purple) !important;
+        }
+
+        .has-warning-background-color {
+            background-color: var(--wp--preset--color--warning) !important;
+        }
+
+        .has-success-background-color {
+            background-color: var(--wp--preset--color--success) !important;
+        }
+
+        .has-error-background-color {
+            background-color: var(--wp--preset--color--error) !important;
+        }
+
+        .has-error-50-background-color {
+            background-color: var(--wp--preset--color--error-50) !important;
+        }
+
+        .has-body-purple-background-color {
+            background-color: var(--wp--preset--color--body-purple) !important;
+        }
+
+        .has-body-neutral-background-color {
+            background-color: var(--wp--preset--color--body-neutral) !important;
+        }
+
+        .has-body-neutral-50-background-color {
+            background-color: var(--wp--preset--color--body-neutral-50) !important;
+        }
+
+        .has-text-base-background-color {
+            background-color: var(--wp--preset--color--text-base) !important;
+        }
+
+        .has-heading-background-color {
+            background-color: var(--wp--preset--color--heading) !important;
+        }
+
+        .has-primary-background-color {
+            background-color: var(--wp--preset--color--primary) !important;
+        }
+
+        .has-custom-background-background-color {
+            background-color: var(--wp--preset--color--custom-background) !important;
+        }
+
+        .has-custom-on-background-background-color {
+            background-color: var(--wp--preset--color--custom-on-background) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-base-border-color {
+            border-color: var(--wp--preset--color--base) !important;
+        }
+
+        .has-primary-50-border-color {
+            border-color: var(--wp--preset--color--primary-50) !important;
+        }
+
+        .has-primary-100-border-color {
+            border-color: var(--wp--preset--color--primary-100) !important;
+        }
+
+        .has-primary-200-border-color {
+            border-color: var(--wp--preset--color--primary-200) !important;
+        }
+
+        .has-primary-300-border-color {
+            border-color: var(--wp--preset--color--primary-300) !important;
+        }
+
+        .has-primary-400-border-color {
+            border-color: var(--wp--preset--color--primary-400) !important;
+        }
+
+        .has-primary-600-border-color {
+            border-color: var(--wp--preset--color--primary-600) !important;
+        }
+
+        .has-primary-700-border-color {
+            border-color: var(--wp--preset--color--primary-700) !important;
+        }
+
+        .has-primary-800-border-color {
+            border-color: var(--wp--preset--color--primary-800) !important;
+        }
+
+        .has-primary-950-border-color {
+            border-color: var(--wp--preset--color--primary-950) !important;
+        }
+
+        .has-tertiary-border-color {
+            border-color: var(--wp--preset--color--tertiary) !important;
+        }
+
+        .has-neutral-border-color {
+            border-color: var(--wp--preset--color--neutral) !important;
+        }
+
+        .has-neutral-50-border-color {
+            border-color: var(--wp--preset--color--neutral-50) !important;
+        }
+
+        .has-neutral-100-border-color {
+            border-color: var(--wp--preset--color--neutral-100) !important;
+        }
+
+        .has-neutral-200-border-color {
+            border-color: var(--wp--preset--color--neutral-200) !important;
+        }
+
+        .has-neutral-700-border-color {
+            border-color: var(--wp--preset--color--neutral-700) !important;
+        }
+
+        .has-pink-border-color {
+            border-color: var(--wp--preset--color--pink) !important;
+        }
+
+        .has-purple-border-color {
+            border-color: var(--wp--preset--color--purple) !important;
+        }
+
+        .has-warning-border-color {
+            border-color: var(--wp--preset--color--warning) !important;
+        }
+
+        .has-success-border-color {
+            border-color: var(--wp--preset--color--success) !important;
+        }
+
+        .has-error-border-color {
+            border-color: var(--wp--preset--color--error) !important;
+        }
+
+        .has-error-50-border-color {
+            border-color: var(--wp--preset--color--error-50) !important;
+        }
+
+        .has-body-purple-border-color {
+            border-color: var(--wp--preset--color--body-purple) !important;
+        }
+
+        .has-body-neutral-border-color {
+            border-color: var(--wp--preset--color--body-neutral) !important;
+        }
+
+        .has-body-neutral-50-border-color {
+            border-color: var(--wp--preset--color--body-neutral-50) !important;
+        }
+
+        .has-text-base-border-color {
+            border-color: var(--wp--preset--color--text-base) !important;
+        }
+
+        .has-heading-border-color {
+            border-color: var(--wp--preset--color--heading) !important;
+        }
+
+        .has-primary-border-color {
+            border-color: var(--wp--preset--color--primary) !important;
+        }
+
+        .has-custom-background-border-color {
+            border-color: var(--wp--preset--color--custom-background) !important;
+        }
+
+        .has-custom-on-background-border-color {
+            border-color: var(--wp--preset--color--custom-on-background) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        .has-h-1-font-size {
+            font-size: var(--wp--preset--font-size--h-1) !important;
+        }
+
+        .has-h-2-font-size {
+            font-size: var(--wp--preset--font-size--h-2) !important;
+        }
+
+        .has-h-3-font-size {
+            font-size: var(--wp--preset--font-size--h-3) !important;
+        }
+
+        .has-h-4-font-size {
+            font-size: var(--wp--preset--font-size--h-4) !important;
+        }
+
+        .has-h-5-font-size {
+            font-size: var(--wp--preset--font-size--h-5) !important;
+        }
+
+        .has-h-6-font-size {
+            font-size: var(--wp--preset--font-size--h-6) !important;
+        }
+
+        .has-p-1-font-size {
+            font-size: var(--wp--preset--font-size--p-1) !important;
+        }
+
+        .has-p-2-font-size {
+            font-size: var(--wp--preset--font-size--p-2) !important;
+        }
+
+        .has-p-3-font-size {
+            font-size: var(--wp--preset--font-size--p-3) !important;
+        }
+
+        .has-custom-1-font-size {
+            font-size: var(--wp--preset--font-size--custom-1) !important;
+        }
+
+        .has-plus-jakarta-font-family {
+            font-family: var(--wp--preset--font-family--plus-jakarta) !important;
+        }
+
+        .has-work-sans-font-family {
+            font-family: var(--wp--preset--font-family--work-sans) !important;
+        }
+
+        :root :where(.wp-block-image img, .wp-block-image .wp-block-image__crop-area, .wp-block-image .components-placeholder) {
+            border-radius: var(--wp--preset--spacing--spacing-24);
+        }
+
+        :root :where(.wp-block-buttons-is-layout-flow)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :root :where(.wp-block-buttons-is-layout-flow)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root :where(.wp-block-buttons-is-layout-flow)>* {
+            margin-block-start: var(--wp--preset--spacing--spacing-16);
+            margin-block-end: 0;
+        }
+
+        :root :where(.wp-block-buttons-is-layout-constrained)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :root :where(.wp-block-buttons-is-layout-constrained)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root :where(.wp-block-buttons-is-layout-constrained)>* {
+            margin-block-start: var(--wp--preset--spacing--spacing-16);
+            margin-block-end: 0;
+        }
+
+        :root :where(.wp-block-buttons-is-layout-flex) {
+            gap: var(--wp--preset--spacing--spacing-16);
+        }
+
+        :root :where(.wp-block-buttons-is-layout-grid) {
+            gap: var(--wp--preset--spacing--spacing-16);
+        }
+
+        :root :where(p) {
+            color: var(--wp--preset--color--body-neutral);
+            font-family: var(--wp--preset--font-family--work-sans);
+            font-size: var(--wp--preset--font-size--p-1);
+            font-weight: 400;
+        }
+
+        :root :where(.wp-block-navigation) {
+            font-size: var(--wp--preset--font-size--p-2);
+        }
+    </style>
+    <style id='core-block-supports-inline-css'>
+        .wp-elements-a711c21caa63a73ce9b4e093a99bb21f a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--background-white);
+        }
+
+        .wp-container-core-buttons-is-layout-1 {
+            justify-content: center;
+        }
+
+        .wp-container-core-navigation-is-layout-1 {
+            gap: var(--wp--preset--spacing--spacing-40);
+            justify-content: center;
+        }
+
+        .wp-container-core-group-is-layout-1 {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+
+        .wp-container-core-group-is-layout-2>.alignfull {
+            margin-right: calc(0px * -1);
+            margin-left: calc(0px * -1);
+        }
+
+        .wp-container-core-group-is-layout-3>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-group-is-layout-3>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-elements-6e28f82cdb2e19c4b06f3f93fb7c6e8f a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-group-is-layout-4> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+            max-width: 850px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .wp-container-core-group-is-layout-4>.alignwide {
+            max-width: 850px;
+        }
+
+        .wp-container-core-group-is-layout-4 .alignfull {
+            max-width: none;
+        }
+
+        .wp-container-core-group-is-layout-4>.alignfull {
+            margin-right: calc(0px * -1);
+            margin-left: calc(0px * -1);
+        }
+
+        .wp-container-core-group-is-layout-4>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-group-is-layout-4>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-elements-70fc07ca1aa1b6e9cf08bc55cb0c4d72 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-group-is-layout-5 {
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+        .wp-container-core-column-is-layout-1>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-column-is-layout-1>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-columns-is-layout-1 {
+            flex-wrap: nowrap;
+        }
+
+        .wp-elements-d73d0c93984daeee5a027e2d396f1e71 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-group-is-layout-6>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-group-is-layout-6>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-elements-babd4adbcf661d4aeb5ae767a7d8f695 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-group-is-layout-7 {
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+        .wp-elements-cc1040705641347efb7de02c88280ab6 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-group-is-layout-8>.alignfull {
+            margin-right: calc(var(--wp--preset--spacing--spacing-32) * -1);
+            margin-left: calc(var(--wp--preset--spacing--spacing-32) * -1);
+        }
+
+        .wp-container-core-group-is-layout-8>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-group-is-layout-8>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-column-is-layout-3>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-column-is-layout-3>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-elements-3db02e85550704a6abef056e0bbc0046 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-group-is-layout-9 {
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+        .wp-elements-969a299e9db38d31351e6219f6855959 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-group-is-layout-10>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-group-is-layout-10>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-column-is-layout-4>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-column-is-layout-4>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-columns-is-layout-2 {
+            flex-wrap: nowrap;
+            gap: var(--wp--preset--spacing--spacing-32) var(--wp--preset--spacing--spacing-32);
+        }
+
+        .wp-container-core-column-is-layout-5>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-column-is-layout-5>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-elements-429e622a5e7fe66041623940935cd286 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-group-is-layout-11 {
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+        .wp-elements-01693c19c890baa0d18eb36bbafd1ce4 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-elements-d5be2b2ba2ed204e8d63d81cff16d778 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-group-is-layout-12>.alignfull {
+            margin-right: calc(var(--wp--preset--spacing--spacing-32) * -1);
+            margin-left: calc(var(--wp--preset--spacing--spacing-32) * -1);
+        }
+
+        .wp-container-core-group-is-layout-12>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-group-is-layout-12>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-column-is-layout-6>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-column-is-layout-6>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-column-is-layout-7>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-column-is-layout-7>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-columns-is-layout-3 {
+            flex-wrap: nowrap;
+            gap: var(--wp--preset--spacing--spacing-32) var(--wp--preset--spacing--spacing-32);
+        }
+
+        .wp-container-core-group-is-layout-13>.alignfull {
+            margin-right: calc(0px * -1);
+            margin-left: calc(0px * -1);
+        }
+
+        .wp-container-core-group-is-layout-14>.alignfull {
+            margin-right: calc(var(--wp--preset--spacing--spacing-32) * -1);
+            margin-left: calc(var(--wp--preset--spacing--spacing-32) * -1);
+        }
+
+        .wp-container-core-group-is-layout-14>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-group-is-layout-14>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-elements-d38beee1e52d9a110a828a6964d5c3f6 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-elements-a7d615604ce1be032d670df9b2f84d1e a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-group-is-layout-15> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+            max-width: 856px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .wp-container-core-group-is-layout-15>.alignwide {
+            max-width: 856px;
+        }
+
+        .wp-container-core-group-is-layout-15 .alignfull {
+            max-width: none;
+        }
+
+        .wp-container-core-group-is-layout-15>.alignfull {
+            margin-right: calc(0px * -1);
+            margin-left: calc(0px * -1);
+        }
+
+        .wp-elements-6acd291ae00e1a3f10c33ae5586a7974 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-group-is-layout-16 {
+            flex-wrap: nowrap;
+            gap: var(--wp--preset--spacing--spacing-8);
+            justify-content: center;
+        }
+
+        .wp-elements-22dbc863bc296080b7e8e6abfa93e601 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-social-links-is-layout-1 {
+            gap: 0.5em var(--wp--preset--spacing--spacing-16);
+            justify-content: center;
+        }
+
+        .wp-elements-55fe1c2081331925208da4770ccae7a3 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-columns-is-layout-4 {
+            flex-wrap: nowrap;
+        }
+
+        .wp-elements-b48a13a6e32a4962a910df3e610b6d2b a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-elements-e645bea6f2d9ff1b7949cd6e67ab4f6b a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-group-is-layout-17 {
+            flex-wrap: nowrap;
+            gap: var(--wp--preset--spacing--spacing-8);
+            justify-content: center;
+        }
+
+        .wp-elements-7d680abe669d3273566bbf0490e0a1df a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-group-is-layout-18 {
+            flex-wrap: nowrap;
+            gap: var(--wp--preset--spacing--spacing-8);
+            justify-content: center;
+        }
+
+        .wp-container-core-columns-is-layout-5 {
+            flex-wrap: nowrap;
+        }
+
+        .wp-elements-4d9e0ab5a0ed7511bda62fe7f3cfab59 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-column-is-layout-15>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-column-is-layout-15>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-elements-3f23227c922e80d31e147429c80c0028 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-elements-f7adbe40be4b566017603b2b0ab82f3d a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-column-is-layout-16>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-column-is-layout-16>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-columns-is-layout-6 {
+            flex-wrap: nowrap;
+        }
+
+        .wp-elements-ccecc23b0e63750a823f4e59125bfed2 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-group-is-layout-19 {
+            flex-wrap: nowrap;
+            gap: var(--wp--preset--spacing--spacing-8);
+            justify-content: center;
+        }
+
+        .wp-elements-32635893914d8e0d5d7c9afc552dd553 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-group-is-layout-20 {
+            flex-wrap: nowrap;
+            gap: var(--wp--preset--spacing--spacing-8);
+            justify-content: center;
+        }
+
+        .wp-container-core-columns-is-layout-7 {
+            flex-wrap: nowrap;
+        }
+
+        .wp-elements-d0d7622f4536ea8e64132b7da4cda394 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-elements-c1108da655841c15163aae4ae12abbb1 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-column-is-layout-19>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-column-is-layout-19>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-elements-7dfeb62ca1f31f1977b9826a6860bc7d a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-elements-cf0d858f9db78bdf9b475c72f002d576 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-column-is-layout-20>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-column-is-layout-20>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-columns-is-layout-8 {
+            flex-wrap: nowrap;
+        }
+
+        .wp-elements-a94ac141ea8915971b7678f9d7c04871 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-columns-is-layout-9 {
+            flex-wrap: nowrap;
+        }
+
+        .wp-container-core-group-is-layout-21>.alignfull {
+            margin-right: calc(var(--wp--preset--spacing--spacing-32) * -1);
+            margin-left: calc(var(--wp--preset--spacing--spacing-32) * -1);
+        }
+
+        .wp-container-core-group-is-layout-21>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-container-core-group-is-layout-21>*+* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .wp-elements-1178599333fa31f4d36e024a6d802024 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-elements-af0f4fd8e29920aa3548fbd424bb9236 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-elements-d6a30f5e387b4616804a3c1052f8b58f a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-elements-64fe616665fbdafd39c8f77d70dbbe53 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-buttons-is-layout-3 {
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .wp-container-core-navigation-is-layout-2 {
+            flex-wrap: nowrap;
+            gap: 8px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-container-core-navigation-is-layout-3 {
+            flex-wrap: nowrap;
+            gap: 8px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-container-core-navigation-is-layout-4 {
+            flex-wrap: nowrap;
+            gap: 8px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-container-core-navigation-is-layout-5 {
+            flex-wrap: nowrap;
+            gap: 8px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-container-core-navigation-is-layout-6 {
+            flex-wrap: nowrap;
+            gap: 8px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-container-core-columns-is-layout-10 {
+            flex-wrap: nowrap;
+        }
+
+        .wp-container-core-group-is-layout-22 {
+            gap: var(--wp--preset--spacing--30);
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+        }
+    </style>
+    <style id='wp-block-template-skip-link-inline-css'>
+        .skip-link.screen-reader-text {
+            border: 0;
+            clip: rect(1px, 1px, 1px, 1px);
+            clip-path: inset(50%);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute !important;
+            width: 1px;
+            word-wrap: normal !important;
+        }
+
+        .skip-link.screen-reader-text:focus {
+            background-color: #eee;
+            clip: auto !important;
+            clip-path: none;
+            color: #444;
+            display: block;
+            font-size: 1em;
+            height: auto;
+            left: 5px;
+            line-height: normal;
+            padding: 15px 23px 14px;
+            text-decoration: none;
+            top: 5px;
+            width: auto;
+            z-index: 100000;
+        }
+    </style>
+    <link rel='stylesheet' id='fb-responsive-control-css' href='/styles/fbf-common.css' media='all' />
+    <link rel='stylesheet' id='FWP_styles-css' href='/styles/style.css' media='all' />
+    <link rel='stylesheet' id='pwaforwp-style-css' href='/styles/style.css' media='all' />
+    <style>
+        .wp-block-image.fbimgfull img {
+            width: 100%;
+        }
+
+        .fb-banner-hero .fb-hero-banner {
+            margin-top: 288px !important;
+        }
+
+        .fb-banner-hero .fb-hero-banner img {
+            margin-top: -288px !important;
+        }
+
+        @media (max-width: 1400px) {
+            .fb-banner-hero .fb-hero-banner {
+                margin-top: 22% !important;
+            }
+
+            .fb-banner-hero .fb-hero-banner img {
+                margin-top: -22% !important;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .fb-hide-desktop {
+                display: none !important;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 1024px) {
+            .fb-hide-tablet {
+                display: none !important;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .fb-hide-mobile {
+                display: none !important;
+            }
+
+            /* .fb-banner-hero .fb-banner-hero-top{
+                padding-bottom: 130px !important;
+            } */
+            .fb-banner-hero .fb-hero-banner {
+                margin-top: 23% !important;
+            }
+
+            .fb-banner-hero .fb-hero-banner img {
+                margin-top: -23% !important;
+            }
+        }
+    </style>
+    <style class='wp-fonts-local'>
+        @font-face {
+            font-family: "Plus Jakarta ";
+            font-style: normal;
+            font-weight: 700;
+            font-display: fallback;
+            src: url('/fonts/PlusJakartaSans-Bold.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: "Work Sans ";
+            font-style: normal;
+            font-weight: 400;
+            font-display: fallback;
+            src: url('/fonts/WorkSans-Regular.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: "Work Sans ";
+            font-style: normal;
+            font-weight: 500;
+            font-display: fallback;
+            src: url('/fonts/WorkSans-Medium.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: "Work Sans ";
+            font-style: normal;
+            font-weight: 600;
+            font-display: fallback;
+            src: url('/fonts/WorkSans-SemiBold.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: "Work Sans ";
+            font-style: normal;
+            font-weight: 700;
+            font-display: fallback;
+            src: url('/fonts/WorkSans-Bold.woff2') format('woff2');
+        }
+    </style>
+    <link rel="icon" href="/logo/android-chrome-512x512-1-150x150.png" sizes="32x32" />
+    <link rel="icon" href="/logo/android-chrome-512x512-1-300x300.png" sizes="192x192" />
+    <meta name="msapplication-TileImage" content="/logo/android-chrome-512x512-1-300x300.png" />
+    <meta name="theme-color" content="rgb(33,33,33)">
+    <meta name="apple-mobile-web-app-title" content="Pepecoin (PEP) - Budúcnosť kryptomien">
+    <meta name="application-name" content="Pepecoin (PEP) - Budúcnosť kryptomien">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <link rel="apple-touch-icon" sizes="192x192" href="/logo/android-chrome-192x192-1.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="/logo/android-chrome-512x512-2.png">
 </head>
 
-<body>
-    <header class="bg-dark text-white text-center p-4 d-flex justify-content-center align-items-center">
-        <img src="/pep-logo.png" alt="Pepecoin Logo" class="mr-3" style="height: auto; max-width: 60px; margin-right: 1rem;">
-        <h1>Pepecoin (PEP) - Rýchla a decentralizovaná kryptomena</h1>
-    </header>    
-    <div class="container mt-4">
-        <section>
-            <h2>Čo je Pepecoin?</h2>
-            <p>Pepecoin (PEP) je inovatívna kryptomena založená na princípe decentralizácie a bezpečnej blockchain
-                technológie. Vznikla s cieľom poskytnúť rýchle a efektívne transakcie s minimálnymi poplatkami. Vďaka
-                Proof of Work mechanizmu zabezpečuje vysokú úroveň bezpečnosti a spoľahlivosti.</p>
-        </section>
-        <section>
-            <h2>Hlavné vlastnosti Pepecoinu</h2>
-            <ul>
-                <li><strong>Rýchle transakcie</strong> – Pepecoin umožňuje okamžité transakcie s nízkymi poplatkami (gas
-                    fees).
-                </li>
-                <li><strong>Decentralizovaná sieť</strong> – Žiadna centrálna autorita, všetko riadia používatelia.</li>
-                <li><strong>Možnosť ťažby</strong> – Rovnako ako Dogecoin, Pepecoin je možné ťažiť pomocou SCRYPT ASIC
-                    minerov.</li>
-                <li><strong>Silná komunita</strong> – Aktívna a rastúca komunita vývojárov a nadšencov na Discorde,
-                    Reddite a Telegrame.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Prečo používať Pepecoin?</h2>
-            <p>Pepecoin ponúka jedinečnú kombináciu rýchlosti, bezpečnosti a decentralizácie. V porovnaní s tradičnými
-                platobnými systémami eliminuje potrebu sprostredkovateľov, čím znižuje náklady a zvyšuje efektivitu.</p>
-        </section>
-        <section>
-            <h2>Získanie Pepecoinu</h2>
-            <p>Pepecoin je k dispozícii na viacerých burzách vrátane Mexc, CoinEx, Stakecube... Vďaka jeho rastúcej
-                popularite sa
-                očakáva rozšírenie na ďalšie platformy.</p>
-        </section>
-        <section>
-            <h2>Budúcnosť Pepecoinu</h2>
-            <p>Pepecoin sa neustále vyvíja. Vývojári a komunita pracujú na nových funkciách a vylepšeniach, ktoré z
-                neho spravia ešte atraktívnejšiu kryptomenu.</p>
-        </section>
-        <section>
-            <h2>Pepecoin FAQ</h2>
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            Čo je Ribbit?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Ribbit je najmenšia jednotka Pepecoinu.</p>
-                            <p>0.00000001 Pepecoin = 1 Ribbit</p>
+<body class="home blog wp-embed-responsive">
+
+    <div class="wp-site-blocks">
+        <header class="wp-block-template-part fb-sticky-header">
+            <div class="wp-block-group alignwide is-layout-flow wp-container-core-group-is-layout-3 wp-block-group-is-layout-flow"
+                style="padding-right:var(--wp--preset--spacing--spacing-32);padding-left:var(--wp--preset--spacing--spacing-32)">
+                <div class="wp-block-group has-background-white-color has-text-color has-link-color wp-elements-a711c21caa63a73ce9b4e093a99bb21f has-global-padding is-layout-constrained wp-container-core-group-is-layout-2 wp-block-group-is-layout-constrained"
+                    style="margin-top:var(--wp--preset--spacing--spacing-24);margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                    <div class="wp-block-group alignwide has-custom-on-background-background-color has-background is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-1 wp-block-group-is-layout-flex"
+                        style="border-radius:100px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-16);padding-right:var(--wp--preset--spacing--spacing-16);padding-bottom:var(--wp--preset--spacing--spacing-16);padding-left:var(--wp--preset--spacing--spacing-32);box-shadow:var(--wp--preset--shadow--natural)">
+                        <h6 class="wp-block-heading"><a href="/">Pepecoin</a></h6>
+
+
+                        <nav class="has-text-color has-white-color is-responsive items-justified-center has-text-decoration-none wp-block-navigation is-content-justification-center is-layout-flex wp-container-core-navigation-is-layout-1 wp-block-navigation-is-layout-flex"
+                            aria-label="Header navigation 2" data-wp-interactive="core/navigation"
+                            data-wp-context='{"overlayOpenedBy":{"click":false,"hover":false,"focus":false},"type":"overlay","roleAttribute":"","ariaLabel":"Menu"}'>
+                            <button aria-haspopup="dialog" aria-label="Open menu"
+                                class="wp-block-navigation__responsive-container-open "
+                                data-wp-on-async--click="actions.openMenuOnClick"
+                                data-wp-on--keydown="actions.handleMenuKeydown"><svg width="24" height="24"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"
+                                    focusable="false">
+                                    <rect x="4" y="7.5" width="16" height="1.5" />
+                                    <rect x="4" y="15" width="16" height="1.5" />
+                                </svg></button>
+                            <div class="wp-block-navigation__responsive-container  " id="modal-1"
+                                data-wp-class--has-modal-open="state.isMenuOpen"
+                                data-wp-class--is-menu-open="state.isMenuOpen" data-wp-watch="callbacks.initMenu"
+                                data-wp-on--keydown="actions.handleMenuKeydown"
+                                data-wp-on-async--focusout="actions.handleMenuFocusout" tabindex="-1">
+                                <div class="wp-block-navigation__responsive-close" tabindex="-1">
+                                    <div class="wp-block-navigation__responsive-dialog"
+                                        data-wp-bind--aria-modal="state.ariaModal"
+                                        data-wp-bind--aria-label="state.ariaLabel"
+                                        data-wp-bind--role="state.roleAttribute">
+                                        <button aria-label="Close menu"
+                                            class="wp-block-navigation__responsive-container-close"
+                                            data-wp-on-async--click="actions.closeMenuOnClick"><svg
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                                height="24" aria-hidden="true" focusable="false">
+                                                <path
+                                                    d="m13.06 12 6.47-6.47-1.06-1.06L12 10.94 5.53 4.47 4.47 5.53 10.94 12l-6.47 6.47 1.06 1.06L12 13.06l6.47 6.47 1.06-1.06L13.06 12Z">
+                                                </path>
+                                            </svg></button>
+                                        <div class="wp-block-navigation__responsive-container-content"
+                                            data-wp-watch="callbacks.focusFirstElement" id="modal-1-content">
+                                            <ul
+                                                class="wp-block-navigation__container has-text-color has-white-color is-responsive items-justified-center has-text-decoration-none wp-block-navigation">
+                                                <li class=" wp-block-navigation-item wp-block-navigation-link"><a
+                                                        class="wp-block-navigation-item__content" href="/"><span
+                                                            class="wp-block-navigation-item__label">Domov</span></a>
+                                                </li>
+                                                <li class=" wp-block-navigation-item wp-block-navigation-link"><a
+                                                        class="wp-block-navigation-item__content"
+                                                        href="https://pepelum.site/guides"><span
+                                                            class="wp-block-navigation-item__label">Návody</span></a>
+                                                </li>
+                                                <li class=" wp-block-navigation-item wp-block-navigation-link"><a
+                                                        class="wp-block-navigation-item__content"
+                                                        href="https://pepelum.site/roadmap"><span
+                                                            class="wp-block-navigation-item__label">Roadmapa</span></a>
+                                                </li>
+                                                <li class=" wp-block-navigation-item wp-block-navigation-link"><a
+                                                        class="wp-block-navigation-item__content"
+                                                        href="https://pepelum.site/other"><span
+                                                            class="wp-block-navigation-item__label">Iné</span></a>
+                                                </li>
+                                                <li class=" wp-block-navigation-item wp-block-navigation-link"><a
+                                                        class="wp-block-navigation-item__content"
+                                                        href="https://pepelum.site/electrumx/"><span
+                                                            class="wp-block-navigation-item__label">ElectrumX</span></a>
+                                                </li>
+                                            </ul>
+                                            <?xml encoding="utf-8" ?>
+                                            <div
+                                                class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex fb-hide-desktop fb-hide-tablet">
+                                                <div class="wp-block-button"><a
+                                                        class="wp-block-button__link has-custom-background-color has-white-background-color has-text-color has-background has-link-color wp-element-button"
+                                                        href="https://pepelum.site/exchanges"
+                                                        style="box-shadow:var(--wp--preset--shadow--natural)"
+                                                        rel="white-button-menu">Kúpiť PEP</a></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+
+                        <?xml encoding="utf-8" ?>
+                        <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex fb-hide-mobile">
+                            <div class="wp-block-button white-button" style="font-style:normal;font-weight:500"><a
+                                    class="wp-block-button__link has-primary-color has-white-background-color has-text-color has-background has-link-color wp-element-button"
+                                    href="https://pepelum.site/exchanges"
+                                    style="box-shadow:var(--wp--preset--shadow--natural)">Kúpiť PEP</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Ako vyzerá Pepecoin adresa?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Pepecoin adresy začínajú na P. Ako príklad môže byť uvedená:</p>
-                            <p>PZ6chc2WsAvLb6tmTczZfZutZQeSCnKeJR</p>
-                        </div>
-                    </div>
+            </div>
+        </header>
+
+        <div class="wp-block-group alignwide has-background-white-background-color has-background has-global-padding is-content-justification-center is-layout-constrained wp-container-core-group-is-layout-14 wp-block-group-is-layout-constrained"
+            style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-24);padding-right:var(--wp--preset--spacing--spacing-32);padding-bottom:var(--wp--preset--spacing--spacing-24);padding-left:var(--wp--preset--spacing--spacing-32)">
+            <div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-container-core-group-is-layout-4 wp-block-group-is-layout-constrained"
+                style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                <figure class="wp-block-image aligncenter size-large"><img src="/images/P_noBackground_RGB.svg"
+                        alt="Pepecoin logo" /></figure>
+                <p
+                    class="has-text-align-center hide has-white-color has-text-color has-link-color wp-elements-6e28f82cdb2e19c4b06f3f93fb7c6e8f">
+                    Pepecoin (PEP) - Budúcnosť kryptomien</p>
+            </div>
+
+            <div class="wp-block-group alignfull has-custom-color-1-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-21 wp-block-group-is-layout-constrained"
+                style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-32);padding-right:var(--wp--preset--spacing--spacing-32);padding-bottom:var(--wp--preset--spacing--spacing-16);padding-left:var(--wp--preset--spacing--spacing-32)">
+                <div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-container-core-group-is-layout-15 wp-block-group-is-layout-constrained"
+                    style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                    <h4 class="wp-block-heading alignwide has-text-align-center has-white-color has-text-color has-link-color wp-elements-d38beee1e52d9a110a828a6964d5c3f6"
+                        style="font-style:normal;font-weight:700">Čo je to Pepecoin?</h1>
+
+                        <p class="has-text-align-center has-white-color has-text-color has-link-color has-p-1-font-size wp-elements-a7d615604ce1be032d670df9b2f84d1e"
+                            style="margin-top:var(--wp--preset--spacing--spacing-24);margin-bottom:var(--wp--preset--spacing--spacing-8)">
+                            Pepecoin nie je len tak obyčajný Pepecoin... Oproti ostatným má tú výhodu, že beží na
+                            <strong>vlastnom blockchaine.</strong> Tým pádom <strong>nie je tokenom</strong> a jeho gas
+                            fees sú extrémne nízke!
+                        </p>
+
+                        <p class="has-text-align-center has-white-color has-text-color has-link-color has-p-1-font-size wp-elements-a7d615604ce1be032d670df9b2f84d1e"
+                            style="margin-top:var(--wp--preset--spacing--spacing-24);margin-bottom:var(--wp--preset--spacing--spacing-8)">
+                            Nevznikol len tak... Pepecoin vytvorili dvaja bratia Zordiak a Karzo. Neskôr sa k ním
+                            pripojili komunitní vývojári ako Chromatic, Master Kush, Mr Bachelor emgi a veľa ďalších!
+                            Cieľom Pepecoinu je stať sa digitálnou menou v obchodoch. Predstavte si kupovať rožky
+                            Pepecoinom! Vďaka nízkym gas fees to je možné!
+                        </p>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Aký je symbol meny pre Pepecoin?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Symbol Ᵽ (známy ako <a href="https://en.wikipedia.org/wiki/P_with_stroke"
-                                    target="_blank">"P s čiarou"</a>) je oficiálny symbolom.</p>
+            </div>
+
+            <div class="wp-block-group alignfull has-custom-color-1-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-21 wp-block-group-is-layout-constrained"
+                style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-32);padding-right:var(--wp--preset--spacing--spacing-32);padding-bottom:var(--wp--preset--spacing--spacing-16);padding-left:var(--wp--preset--spacing--spacing-32)">
+                <div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-container-core-group-is-layout-15 wp-block-group-is-layout-constrained"
+                    style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                    <h4 class="wp-block-heading alignwide has-text-align-center has-white-color has-text-color has-link-color wp-elements-d38beee1e52d9a110a828a6964d5c3f6"
+                        style="font-style:normal;font-weight:700">Najčastejšie Otázky</h1>
+
+                        <div class="accordion" id="accordionFAQ">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Čo je to Ribbit?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>Ribbit je najmenšia jednotka Pepecoinu.</p>
+                                        <p>0.00000001 Pepecoin = 1 Ribbit</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Ako vyzerá Pepecoin adresa?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>Pepecoin adresy začínajú na P. Ako príklad môže byť uvedená:</p>
+                                        <p>PZ6chc2WsAvLb6tmTczZfZutZQeSCnKeJR</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Aký je symbol meny pre Pepecoin?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>Symbol Ᵽ (známy ako <a href="https://en.wikipedia.org/wiki/P_with_stroke"
+                                                target="_blank">"P s čiarou"</a>) je oficiálny symbolom.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="true"
+                                        aria-controls="collapseFour">
+                                        Kto vytvoril Pepecoin?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>Pepecoin bol vytvorený dvoma vývojármi, Dogecoin Shibes a bratmi: Zordiak a
+                                            Karzo.</p>
+                                        <p>Od spustenia sa mnoho členov komunity pripojilo k tímu a pomáha realizovať
+                                            víziu
+                                            Pepecoinu.</p>
+                                        <p>Pepecoin je skutočne kryptomena založená na komunite. Nepostúpila by tam, kde
+                                            je teraz,
+                                            bez jej komunity.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven" aria-expanded="false"
+                                        aria-controls="collapseSeven">
+                                        Coin vs Token
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>Existujú dva základné typy kryptomien, coiny a tokeny. Tokeny existujú ako
+                                            smart
+                                            kontrakty na nadradenej sieti ako Ethereum alebo Solana. Mince, na druhej
+                                            strane, majú
+                                            svoj vlastný blockchain. Niektoré blockchainy používajú Proof-of-Work (napr.
+                                            Bitcoin),
+                                            zatiaľ čo iné používajú Proof-of-Stake (napr. Ethereum). Ethereum je coin,
+                                            Tether je
+                                            token (vytvorený cez smart kontrakt) na Ethereum.</p>
+                                        <p>Pepecoin je coin s vlastným blockchainom. Používa Proof-of-Work rovnako ako
+                                            Bitcoin,
+                                            Dogecoin alebo Litecoin.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        Prečo bol vytvorený Pepecoin?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>Existuje mnoho variácií kryptomien na tému Pepe. Takmer všetky z nich sú
+                                            tokeny. Hoci
+                                            niektoré z týchto
+                                            tokenov zaznamenali veľký úspech, na vytvorenie skutočne skvelej kryptomeny
+                                            je
+                                            nevyhnutné mať vlastný blockchain. Jednoducho povedané, Pepecoin bol
+                                            vytvorený, pretože
+                                            má oveľa väčšiu víziu. Vízia, ktorú možno dosiahnuť len tým, že
+                                            Pepe bude na vlastnom blockchaine.</p>
+                                        <p>Veríme, že kryptomeny by mali byť viac ako len cena na grafe. Transakčné
+                                            poplatky
+                                            Pepecoinu sú extrémne nízke, často frakcie centu. To z neho robí najlepšiu
+                                            voľbu pre
+                                            posielanie peňazí priateľom a rodine, darovanie vašej obľúbenej charite
+                                            alebo kúpou
+                                            šálky
+                                            kávy.</p>
+                                        <p>Twitch streameri, YouTuberi, influenceri a ktokoľvek
+                                            môže prijímať Pepecoin ako dar od kohokoľvek na celom svete jednoducho
+                                            zdieľaním svojej
+                                            adresy so svojimi sledovateľmi alebo priateľmi.</p>
+                                        <p>Myslíme si, že je to dosť cool.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Je Pepecoin Core bezpečný na používanie?
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>Áno!</p>
+                                        <p>Všetky Pepecoin Core verzie sú kryptograficky preukázané, že sú postavené zo
+                                            zdrojového
+                                            kódu. Pred každým vydaním sú Pepecoin Core binárne súbory deterministicky
+                                            zostavené
+                                            viacerými vývojármi z komunity. Binárne súbory sú potom "odtlačkované"
+                                            pomocou hash
+                                            funkcie. Odtlačky od každého vývojára sú potom porovnané, aby sa
+                                            zabezpečilo, že sa
+                                            zhodujú. Ak vývojár urobí zmenu v kóde, aj keď len jeden znak, jeho odtlačok
+                                            sa nebude
+                                            zhodovať s odtlačkami ostatných vývojárov. Len po tom, čo sa všetky odtlačky
+                                            vývojárov
+                                            zhodujú, sú binárne súbory Pepecoin Core vydané.</p>
+                                        <p>Tento proces zaisťuje, že nedošlo k žiadnemu manipulovaniu a že používatelia
+                                            sú v bezpečí
+                                            pri sťahovaní a inštalácii ďalšieho vydania.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseNine" aria-expanded="false"
+                                        aria-controls="collapseNine">
+                                        Tokenomika
+                                    </button>
+                                </h2>
+                                <div id="collapseNine" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>Každý blok odmeňuje ťažiarov novými Pepecoinami. Nižšie je uvedená tabuľka
+                                            všetkých
+                                            blokových odmien.</p>
+                                        <p>Po bloku 600k zostane bloková odmena navždy 10,000 Pepecoinov. To zabezpečí,
+                                            že
+                                            ťažiari budú mať spoľahlivý prúd mincí na ťažbu.</p>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Blok</th>
+                                                    <th>Odmena</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1–99,999</td>
+                                                    <td>500,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>100,000–199,999</td>
+                                                    <td>250,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>200,000–299,999</td>
+                                                    <td>125,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>300,000–399,999</td>
+                                                    <td>62,500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>400,000–499,999</td>
+                                                    <td>31,250</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>500,000–599,999</td>
+                                                    <td>15,625</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>600,000+</td>
+                                                    <td>10,000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                        Prečo je tak veľa Pepe kryptomien?
+                                    </button>
+                                </h2>
+                                <div id="collapseTen" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>Vytvoriť token je dnes jednoduchšie ako kedykoľvek predtým. Každý môže
+                                            vytvoriť logo a
+                                            spustiť token.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseEleven" aria-expanded="false"
+                                        aria-controls="collapseEleven">
+                                        Kedy bude Pepecoin na Uniswap, Metamask, atď.?
+                                    </button>
+                                </h2>
+                                <div id="collapseEleven" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>Rovnako ako Bitcoin a Dogecoin, Pepecoin nie je kompatibilný s Web3 službami.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwelve" aria-expanded="false"
+                                        aria-controls="collapseTwelve">
+                                        Aká je adresa kontraktu pre Pepecoin?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwelve" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>Neexistuje žiadna adresa kontraktu pre Pepecoin. Funguje na vlastnom
+                                            blockchaine.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                                        Bol Pepecoin vytvorený ako vtip?
+                                    </button>
+                                </h2>
+                                <div id="collapse15" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>Nie. Pepecoin bol vytvorený s úmyslom byť najlepšou voľbou ako Pepe
+                                            kryptomena. Pepecoin
+                                            bol spravodlivo spustený, má extrémne nízke poplatky, je možné ho ťažiť
+                                            spolu s
+                                            Litecoinom
+                                            a Dogecoinom. Je na vlastnom blockchaine.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                                        Ako zistím, či mám správny Pepecoin?
+                                    </button>
+                                </h2>
+                                <div id="collapse20" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>Skontrolujte adresu. Mala by začínať písmenom P. Ak vaša adresa začína na 0x,
+                                            nie je to
+                                            Pepecoin.</p>
+                                        <p>Pepecoin nepoužíva smart kontrakty. Ak má to, čo ste kúpili, kontraktovú
+                                            adresu, nie je
+                                            to Pepecoin.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                                        Čo znamená "komunitne zameraný"?
+                                    </button>
+                                </h2>
+                                <div id="collapse17" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>Doge meme má jednu hlavnú kryptomenu a komunitu <a
+                                                href="https://reddit.com/r/dogecoin" target="_blank">r/Dogecoin</a>.
+                                            Veríme, že aj Pepe meme by mal mať jednu kryptomenu
+                                            a komunitu <a href="https://reddit.com/r/pepecoin"
+                                                target="_blank">r/Pepecoin</a>. Od
+                                            začiatku sme sa snažili vytvoriť najlepší možný coin a spojiť všetkých
+                                            fanúšikov Pepe do
+                                            jednej silnej komunity.</p>
+                                        <p>Pridajte sa k nám, radi vás privítame!</p>
+                                        <p><a href="https://t.me/PepecoinGroup" target="_blank">Telegram</a> | <a
+                                                href="https://reddit.com/r/pepecoin" target="_blank">Reddit</a> | <a
+                                                href="https://pepecoin.org/discord" target="_blank">Discord</a></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                            Kto vytvoril Pepecoin?
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Pepecoin bol vytvorený dvoma vývojármi, Dogecoin Shibes, a bratmi: Zordiak a Karzo.</p>
-                            <p>Od spustenia sa mnoho členov komunity pripojilo k tímu a pomáha realizovať víziu
-                                Pepecoinu.</p>
-                            <p>Pepecoin je skutočne kryptomena založená na komunite. Nepostúpila by tam, kde je teraz,
-                                bez komunity.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                            Coin vs Token
-                        </button>
-                    </h2>
-                    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Existujú dva základné typy kryptomien, coiny a tokeny. Tokeny existujú ako smart
-                                kontrakty na nadradenej sieti ako Ethereum alebo Solana. Mince, na druhej strane, majú
-                                svoj vlastný blockchain. Niektoré blockchainy používajú Proof-of-Work (napr. Bitcoin),
-                                zatiaľ čo iné používajú Proof-of-Stake (napr. Ethereum). Ethereum je coin, Tether je
-                                token (vytvorený cez smart kontrakt) na Ethereum.</p>
-                            <p>Pepecoin je coin s vlastným blockchainom. Používa Proof-of-Work rovnako ako Bitcoin,
-                                Dogecoin alebo Litecoin.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Prečo bol vytvorený Pepecoin?
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Existuje mnoho variácií kryptomien na tému Pepe. Takmer všetky z nich sú tokeny. Hoci
-                                niektoré z týchto
-                                tokenov zaznamenali veľký úspech, na vytvorenie skutočne skvelej kryptomeny je
-                                nevyhnutné mať vlastný blockchain. Jednoducho povedané, Pepecoin bol vytvorený, pretože
-                                má oveľa väčšiu víziu. Vízia, ktorú možno dosiahnuť len tým, že
-                                Pepe bude na vlastnom blockchaine.</p>
-                            <p>Veríme, že kryptomeny by mali byť viac ako len cena na grafe. Transakčné poplatky
-                                Pepecoinu sú extrémne nízke, často frakcie centu. To z neho robí najlepšiu voľbu pre
-                                posielanie peňazí priateľom a rodine, darovanie vašej obľúbenej charite alebo kúpou
-                                šálky
-                                kávy.</p>
-                            <p>Twitch streameri, YouTuberi, influenceri a ktokoľvek
-                                môže prijímať Pepecoin ako dar od kohokoľvek na celom svete jednoducho zdieľaním svojej
-                                adresy so svojimi sledovateľmi alebo priateľmi.</p>
-                            <p>Myslíme si, že je to dosť cool.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            Je Pepecoin Core bezpečný na používanie?
-                        </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Áno!</p>
-                            <p>Všetky Pepecoin Core verzie sú kryptograficky preukázané, že sú postavené zo zdrojového
-                                kódu. Pred každým vydaním sú Pepecoin Core binárne súbory deterministicky zostavené
-                                viacerými vývojármi z komunity. Binárne súbory sú potom "odtlačkované" pomocou hash
-                                funkcie. Odtlačky od každého vývojára sú potom porovnané, aby sa zabezpečilo, že sa
-                                zhodujú. Ak vývojár urobí zmenu v kóde, aj keď len jeden znak, jeho odtlačok sa nebude
-                                zhodovať s odtlačkami ostatných vývojárov. Len po tom, čo sa všetky odtlačky vývojárov
-                                zhodujú, sú binárne súbory Pepecoin Core vydané.</p>
-                            <p>Tento proces zaisťuje, že nedošlo k žiadnemu manipulovaniu a že používatelia sú v bezpečí
-                                pri sťahovaní a inštalácii ďalšieho vydania.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                            Tokenomika
-                        </button>
-                    </h2>
-                    <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Každý blok odmeňuje ťažiarov novými Pepecoinami. Nižšie je uvedená tabuľka všetkých
-                                blokových odmien.</p>
-                            <p>Po bloku 600k zostane bloková odmena navždy 10,000 Pepecoinov. To zabezpečí, že
-                                ťažiari budú mať spoľahlivý prúd mincí na ťažbu.</p>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Blok</th>
-                                        <th>Odmena</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1–99,999</td>
-                                        <td>500,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>100,000–199,999</td>
-                                        <td>250,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>200,000–299,999</td>
-                                        <td>125,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>300,000–399,999</td>
-                                        <td>62,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>400,000–499,999</td>
-                                        <td>31,250</td>
-                                    </tr>
-                                    <tr>
-                                        <td>500,000–599,999</td>
-                                        <td>15,625</td>
-                                    </tr>
-                                    <tr>
-                                        <td>600,000+</td>
-                                        <td>10,000</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                            Prečo je tak veľa Pepe kryptomien?
-                        </button>
-                    </h2>
-                    <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Vytvoriť token je dnes jednoduchšie ako kedykoľvek predtým. Každý môže vytvoriť logo a
-                                spustiť token.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                            Kedy bude Pepecoin na Uniswap, Metamask, atď.?
-                        </button>
-                    </h2>
-                    <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Rovnako ako Bitcoin a Dogecoin, Pepecoin nie je kompatibilný s Web3 službami.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                            Aká je adresa kontraktu pre Pepecoin?
-                        </button>
-                    </h2>
-                    <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Neexistuje žiadna adresa kontraktu pre Pepecoin. Funguje na vlastnom blockchaine.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
-                            Bol Pepecoin vytvorený ako vtip?
-                        </button>
-                    </h2>
-                    <div id="collapse15" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Nie. Pepecoin bol vytvorený s úmyslom byť najlepšou voľbou ako Pepe kryptomena. Pepecoin
-                                bol spravodlivo spustený, má extrémne nízke poplatky, je možné ho ťažiť spolu s
-                                Litecoinom
-                                a Dogecoinom. Je na vlastnom blockchaine.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
-                            Ako zistím, či mám správny Pepecoin?
-                        </button>
-                    </h2>
-                    <div id="collapse20" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Skontrolujte adresu. Mala by začínať písmenom P. Ak vaša adresa začína na 0x, nie je to
-                                Pepecoin.</p>
-                            <p>Pepecoin nepoužíva smart kontrakty. Ak má to, čo ste kúpili, kontraktovú adresu, nie je
-                                to Pepecoin.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
-                            Čo znamená "komunitne zameraný"?
-                        </button>
-                    </h2>
-                    <div id="collapse17" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Doge meme má jednu hlavnú kryptomenu a komunitu <a href="https://reddit.com/r/dogecoin"
-                                    target="_blank">r/Dogecoin</a>. Veríme, že aj Pepe meme by mal mať jednu kryptomenu
-                                a komunitu <a href="https://reddit.com/r/pepecoin" target="_blank">r/Pepecoin</a>. Od
-                                začiatku sme sa snažili vytvoriť najlepší možný coin a spojiť všetkých fanúšikov Pepe do
-                                jednej silnej komunity.</p>
-                            <p>Pridajte sa k nám, radi vás privítame!</p>
-                            <p><a href="https://t.me/PepecoinGroup" target="_blank">Telegram</a> | <a
-                                    href="https://reddit.com/r/pepecoin" target="_blank">Reddit</a> | <a
-                                    href="https://pepecoin.org/discord" target="_blank">Discord</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseLinks" aria-expanded="false" aria-controls="collapseLinks">
-                            <strong>Kde nájdem viac informácií o Pepecoine?</strong>
-                        </button>
-                    </h2>
-                    <div id="collapseLinks" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li><a href="https://pepecoin.org" target="_blank">Oficiálna stránka Pepecoinu</a></li>
-                                <li><a href="https://pepelum.site" target="_blank">Pepecoin komunitná stránka s
-                                        návodmi</a></li>
-                                <li><a href="https://pepecoin-nodes.com" target="_blank">Mapa Pepecoin nodiek ako má
-                                        Dogecoin</a></li>
-                                <li><a href="https://pepeblocks.com" target="_blank">Blockchain explorer</a></li>
-                                <li><a href="https://flappypepe.com" target="_blank">Hrajte a získajte Pepecoiny</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
 
+                <div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-container-core-group-is-layout-13 wp-block-group-is-layout-constrained"
+                    style="margin-top:var(--wp--preset--spacing--spacing-64);margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                    <div class="wp-block-columns alignwide are-vertically-aligned-top is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex"
+                        style="margin-top:0;margin-bottom:var(--wp--preset--spacing--spacing-32);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                        <div
+                            class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+                            <div class="wp-block-group ek-linked-block guide-wallets guide has-custom-on-background-background-color has-background is-layout-flow wp-container-core-group-is-layout-6 wp-block-group-is-layout-flow"
+                                style="border-radius:24px;min-height:0px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-32);padding-right:var(--wp--preset--spacing--spacing-32);padding-bottom:var(--wp--preset--spacing--spacing-32);padding-left:var(--wp--preset--spacing--spacing-32);box-shadow:var(--wp--preset--shadow--natural)">
+                                <script>
+                                    document.querySelector('.guide-wallets').addEventListener('click', function () {
+                                        window.location.href = 'https://pepelum.site/guides';
+                                    });
+                                </script>
+
+
+
+                                <div
+                                    class="wp-block-columns is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
+                                    <div class="wp-block-column is-layout-flow wp-container-core-column-is-layout-1 wp-block-column-is-layout-flow"
+                                        style="border-style:none;border-width:0px;border-radius:0px;flex-basis:100%">
+                                        <div
+                                            class="wp-block-group is-horizontal is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-5 wp-block-group-is-layout-flex">
+                                            <figure
+                                                class="wp-block-image size-large is-resized has-custom-border is-style-default">
+                                                <img src="/images/book.svg" alt="Guides icon"
+                                                    style="border-style:none;border-width:0px;border-radius:0px;width:34px;height:auto" />
+                                            </figure>
+
+
+
+                                            <h2
+                                                class="wp-block-heading has-text-align-left has-white-color has-text-color has-link-color has-h-6-font-size wp-elements-70fc07ca1aa1b6e9cf08bc55cb0c4d72">
+                                                Návody</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <p class="has-text-align-center has-white-color has-text-color has-link-color wp-elements-d73d0c93984daeee5a027e2d396f1e71"
+                                    style="margin-top:var(--wp--preset--spacing--spacing-16);margin-right:0;margin-bottom:var(--wp--preset--spacing--spacing-40);margin-left:0;font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.412), 18px);">
+                                    Objavte svoju cestu s podrobnými a personalizovanými návodmi, ktoré vás podporia
+                                    na každom kroku!</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-container-core-column-is-layout-3 wp-block-column-is-layout-flow"
+                            style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                            <div class="wp-block-group ek-linked-block guide-get-pepecoin guide has-custom-on-background-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-8 wp-block-group-is-layout-constrained"
+                                style="border-radius:24px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-32);padding-right:var(--wp--preset--spacing--spacing-32);padding-bottom:var(--wp--preset--spacing--spacing-32);padding-left:var(--wp--preset--spacing--spacing-32);box-shadow:var(--wp--preset--shadow--natural)">
+                                <script>
+                                    document.querySelector('.guide-get-pepecoin').addEventListener('click', function () {
+                                        window.location.href = '/roadmap';
+                                    });
+                                </script>
+
+
+
+                                <div
+                                    class="wp-block-group is-horizontal is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-7 wp-block-group-is-layout-flex">
+                                    <figure
+                                        class="wp-block-image size-large is-resized has-custom-border is-style-default">
+                                        <img src="/images/map.svg" alt="Roadmap icon"
+                                            style="border-style:none;border-width:0px;border-radius:0px;width:34px;height:auto" />
+                                    </figure>
+
+
+
+                                    <h2
+                                        class="wp-block-heading has-text-align-left has-white-color has-text-color has-link-color has-h-6-font-size wp-elements-babd4adbcf661d4aeb5ae767a7d8f695">
+                                        Roadmapa</h2>
+                                </div>
+
+
+
+                                <p class="has-text-align-center has-white-color has-text-color has-link-color wp-elements-cc1040705641347efb7de02c88280ab6"
+                                    style="margin-top:var(--wp--preset--spacing--spacing-16);margin-right:0;margin-bottom:var(--wp--preset--spacing--spacing-40);margin-left:0;font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.412), 18px);">
+                                    Sledujte odkaz Pepecoinu. Od jeho základov až po ambicióznu a neustále sa vyvíjajúcu
+                                    budúcnosť.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-container-core-column-is-layout-4 wp-block-column-is-layout-flow"
+                            style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                            <div class="wp-block-group ek-linked-block guide-tip-bots guide has-custom-on-background-background-color has-background is-layout-flow wp-container-core-group-is-layout-10 wp-block-group-is-layout-flow"
+                                style="border-radius:24px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-32);padding-right:var(--wp--preset--spacing--spacing-32);padding-bottom:var(--wp--preset--spacing--spacing-32);padding-left:var(--wp--preset--spacing--spacing-32);box-shadow:var(--wp--preset--shadow--natural)">
+                                <script>
+                                    document.querySelector('.guide-tip-bots').addEventListener('click', function () {
+                                        window.location.href = '/other';
+                                    });
+                                </script>
+
+
+
+                                <div
+                                    class="wp-block-group is-horizontal is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-9 wp-block-group-is-layout-flex">
+                                    <figure
+                                        class="wp-block-image size-large is-resized has-custom-border is-style-default">
+                                        <img src="/images/community.svg" alt="Community icon"
+                                            style="border-style:none;border-width:0px;border-radius:0px;width:34px;height:auto" />
+                                    </figure>
+
+
+
+                                    <h2
+                                        class="wp-block-heading has-text-align-left has-white-color has-text-color has-link-color has-h-6-font-size wp-elements-3db02e85550704a6abef056e0bbc0046">
+                                        Iné</h2>
+                                </div>
+
+
+
+                                <p class="has-text-align-center has-white-color has-text-color has-link-color wp-elements-969a299e9db38d31351e6219f6855959"
+                                    style="margin-top:var(--wp--preset--spacing--spacing-16);margin-right:0;margin-bottom:var(--wp--preset--spacing--spacing-40);margin-left:0;font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.412), 18px);">
+                                    Objavte výnimočné komunitné projekty. Vytvorené komunitou, pre komunitu!</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-3 wp-block-columns-is-layout-flex"
+                        style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                        <div class="wp-block-column is-layout-flow wp-container-core-column-is-layout-5 wp-block-column-is-layout-flow"
+                            style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"></div>
+
+
+
+                        <div class="wp-block-column is-layout-flow wp-container-core-column-is-layout-6 wp-block-column-is-layout-flow"
+                            style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                            <div class="wp-block-group ek-linked-block guide-mining guide has-custom-on-background-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-12 wp-block-group-is-layout-constrained"
+                                style="border-radius:24px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-32);padding-right:var(--wp--preset--spacing--spacing-32);padding-bottom:var(--wp--preset--spacing--spacing-32);padding-left:var(--wp--preset--spacing--spacing-32);box-shadow:var(--wp--preset--shadow--natural)">
+                                <script>
+                                    document.querySelector('.guide-mining').addEventListener('click', function () {
+                                        window.location.href = 'https://pepelum.site/electrumx';
+                                    });
+                                </script>
+
+
+
+                                <div
+                                    class="wp-block-group is-horizontal is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-11 wp-block-group-is-layout-flex">
+                                    <figure
+                                        class="wp-block-image size-large is-resized has-custom-border is-style-default">
+                                        <img src="/images/server.svg" alt="ElectrumX icon"
+                                            style="border-style:none;border-width:0px;border-radius:0px;width:34px;height:auto" />
+                                    </figure>
+
+
+
+                                    <h2
+                                        class="wp-block-heading has-text-align-left has-white-color has-text-color has-link-color has-h-6-font-size wp-elements-429e622a5e7fe66041623940935cd286">
+                                        ElectrumX</h2>
+                                </div>
+
+
+
+                                <p class="has-text-align-center has-white-color has-text-color has-link-color wp-elements-01693c19c890baa0d18eb36bbafd1ce4"
+                                    style="margin-top:var(--wp--preset--spacing--spacing-16);margin-right:0;margin-bottom:var(--wp--preset--spacing--spacing-40);margin-left:0;font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.412), 18px);">
+                                    Ste vývojár a chcete integrovať Pepecoin do svojej peňaženky alebo služby?<br>
+                                    Všetku potrebnú dokumentáciu na pripojenie sa k Pepecoin serverom nájdete tu.</p>
+
+
+
+                                <p class="has-text-align-center has-white-color has-text-color has-link-color wp-elements-d5be2b2ba2ed204e8d63d81cff16d778"
+                                    style="margin-top:var(--wp--preset--spacing--spacing-16);margin-right:0;margin-bottom:var(--wp--preset--spacing--spacing-40);margin-left:0;font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.412), 18px);">
+                                    Nie ste vývojár?<br>
+                                    Žiadny problém! Tento jednoduchý návod vám ukáže, ako si môžete spustiť vlastný
+                                    Electrum
+                                    server!</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="wp-block-column is-layout-flow wp-container-core-column-is-layout-7 wp-block-column-is-layout-flow"
+                            style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"></div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section>
-            <h2>Pepecoin návody</h2>
-            <p><a href="https://pepelum.site" target="_blank">Pepelum</a> vám poskytne najlepšie a ľahko zrozumiteľné
-                návody. Z každého rožka troška. Bohužiaľ ju nenájdete v slovenčine.</p>
-        </section>
+
+
+
+            <div class="wp-block-group alignfull has-custom-color-1-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-21 wp-block-group-is-layout-constrained"
+                style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-32);padding-right:var(--wp--preset--spacing--spacing-32);padding-bottom:var(--wp--preset--spacing--spacing-32);padding-left:var(--wp--preset--spacing--spacing-32)">
+                <div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-container-core-group-is-layout-15 wp-block-group-is-layout-constrained"
+                    style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                    <h1 class="wp-block-heading alignwide has-text-align-center has-white-color has-text-color has-link-color wp-elements-d38beee1e52d9a110a828a6964d5c3f6"
+                        style="font-style:normal;font-weight:700">Objavte Pepecoin Komunitu</h1>
+
+
+
+                    <p class="has-text-align-center has-white-color has-text-color has-link-color has-p-1-font-size wp-elements-a7d615604ce1be032d670df9b2f84d1e"
+                        style="margin-top:var(--wp--preset--spacing--spacing-24);margin-bottom:var(--wp--preset--spacing--spacing-40)">
+                        Pepecoin komunita víta každého! Žiadna otázka nie je príliš jednoduchá. Sme tu, aby sme vás
+                        podporili a sprevádzali na každom kroku.</p>
+                </div>
+
+
+
+                <div
+                    class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-9 wp-block-columns-is-layout-flex">
+                    <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
+                        style="flex-basis:22.22%">
+                        <div class="wp-block-group theme-accordion-list has-custom-on-background-background-color has-background is-horizontal is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-16 wp-block-group-is-layout-flex"
+                            style="border-radius:24px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-8);padding-right:var(--wp--preset--spacing--spacing-8);padding-bottom:var(--wp--preset--spacing--spacing-8);padding-left:var(--wp--preset--spacing--spacing-8);box-shadow:var(--wp--preset--shadow--natural)">
+                            <h3 class="wp-block-heading has-white-color has-text-color has-link-color has-p-1-font-size wp-elements-6acd291ae00e1a3f10c33ae5586a7974"
+                                style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-style:normal;font-weight:600">
+                                Sociálne Médiá</h3>
+                        </div>
+
+
+
+                        <p class="has-text-align-center has-white-color has-text-color has-link-color wp-elements-22dbc863bc296080b7e8e6abfa93e601"
+                            style="margin-top:5px;margin-bottom:5px">Pepecoin je možné sledovať na:</p>
+
+
+
+                        <ul class="wp-block-social-links aligncenter is-content-justification-center is-layout-flex wp-container-core-social-links-is-layout-1 wp-block-social-links-is-layout-flex"
+                            style="margin-top:var(--wp--preset--spacing--spacing-8);margin-bottom:var(--wp--preset--spacing--spacing-8)">
+                            <li class="wp-social-link wp-social-link-x  wp-block-social-link"><a
+                                    href="https://x.com/PepecoinNetwork" class="wp-block-social-link-anchor"><svg
+                                        width="24" height="24" viewBox="0 0 24 24" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                        <path
+                                            d="M13.982 10.622 20.54 3h-1.554l-5.693 6.618L8.745 3H3.5l6.876 10.007L3.5 21h1.554l6.012-6.989L15.868 21h5.245l-7.131-10.378Zm-2.128 2.474-.697-.997-5.543-7.93H8l4.474 6.4.697.996 5.815 8.318h-2.387l-4.745-6.787Z" />
+                                    </svg><span class="wp-block-social-link-label screen-reader-text">X</span></a></li>
+
+                            <li class="wp-social-link wp-social-link-tiktok  wp-block-social-link"><a
+                                    href="https://www.tiktok.com/@pepecoin_" class="wp-block-social-link-anchor"><svg
+                                        width="24" height="24" viewBox="0 0 32 32" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                        <path
+                                            d="M16.708 0.027c1.745-0.027 3.48-0.011 5.213-0.027 0.105 2.041 0.839 4.12 2.333 5.563 1.491 1.479 3.6 2.156 5.652 2.385v5.369c-1.923-0.063-3.855-0.463-5.6-1.291-0.76-0.344-1.468-0.787-2.161-1.24-0.009 3.896 0.016 7.787-0.025 11.667-0.104 1.864-0.719 3.719-1.803 5.255-1.744 2.557-4.771 4.224-7.88 4.276-1.907 0.109-3.812-0.411-5.437-1.369-2.693-1.588-4.588-4.495-4.864-7.615-0.032-0.667-0.043-1.333-0.016-1.984 0.24-2.537 1.495-4.964 3.443-6.615 2.208-1.923 5.301-2.839 8.197-2.297 0.027 1.975-0.052 3.948-0.052 5.923-1.323-0.428-2.869-0.308-4.025 0.495-0.844 0.547-1.485 1.385-1.819 2.333-0.276 0.676-0.197 1.427-0.181 2.145 0.317 2.188 2.421 4.027 4.667 3.828 1.489-0.016 2.916-0.88 3.692-2.145 0.251-0.443 0.532-0.896 0.547-1.417 0.131-2.385 0.079-4.76 0.095-7.145 0.011-5.375-0.016-10.735 0.025-16.093z" />
+                                    </svg><span class="wp-block-social-link-label screen-reader-text">TikTok</span></a>
+                            </li>
+
+                            <li class="wp-social-link wp-social-link-youtube  wp-block-social-link"><a
+                                    href="https://www.youtube.com/@pepecoin" class="wp-block-social-link-anchor"><svg
+                                        width="24" height="24" viewBox="0 0 24 24" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                        <path
+                                            d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z">
+                                        </path>
+                                    </svg><span class="wp-block-social-link-label screen-reader-text">YouTube</span></a>
+                            </li>
+
+                            <li class="wp-social-link wp-social-link-facebook  wp-block-social-link"><a
+                                    href="https://www.facebook.com/profile.php?id=61559208990076"
+                                    class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z">
+                                        </path>
+                                    </svg><span
+                                        class="wp-block-social-link-label screen-reader-text">Facebook</span></a>
+                            </li>
+                        </ul>
+
+
+
+                        <p
+                            class="has-text-align-center has-white-color has-text-color has-link-color wp-elements-55fe1c2081331925208da4770ccae7a3">
+                            Hoci je Pepecoin primárne aktívny na X, udržiava si aj viaceré účty na rôznych sociálnych
+                            platformách.</p>
+                    </div>
+
+
+
+                    <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
+                        style="flex-basis:44.45%">
+                        <h4 class="wp-block-heading has-text-align-center" style="margin-top:0;margin-bottom:0">
+                            <strong>Spoznajte Pepecoin Komunitu</strong>
+                        </h4>
+
+
+
+                        <div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-4 wp-block-columns-is-layout-flex"
+                            style="margin-top:0">
+                            <div
+                                class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+                                <figure class="wp-block-image size-large"><a href="https://discord.gg/AaKhJA2gqG"
+                                        target="_blank" rel=" noreferrer noopener"><img src="/images/discord.png"
+                                            alt="Discord logo" /></a></figure>
+                            </div>
+
+
+
+                            <div
+                                class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+                                <figure class="wp-block-image size-large"><a href="https://reddit.com/r/pepecoin"
+                                        target="_blank" rel=" noreferrer noopener"><img src="/images/reddit.png"
+                                            alt="Reddit logo" /></a></figure>
+                            </div>
+
+
+
+                            <div
+                                class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+                                <figure class="wp-block-image aligncenter size-large is-resized"><a
+                                        href="https://t.me/PepecoinGroup" target="_blank"
+                                        rel=" noreferrer noopener"><img src="/images/telegram.svg" alt="Telegram logo"
+                                            style="object-fit:cover;width:146px;height:auto" /></a>
+                                </figure>
+                            </div>
+                        </div>
+
+
+
+                        <h5 class="wp-block-heading has-text-align-center"><strong>Viac ako jeden rybník pre Pepecoin
+                                žabky</strong>
+                        </h5>
+
+
+
+                        <p
+                            class="has-text-align-center has-white-color has-text-color has-link-color wp-elements-b48a13a6e32a4962a910df3e610b6d2b">
+                            Komunitu Pepecoinu nájdete hlavne na Discorde, Reddite a Telegrame. Nájdete tu príjemné
+                            priateľské prostredie, kde sa vždy budete cítiť ako doma.</p>
+                    </div>
+
+
+
+                    <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
+                        style="flex-basis:33.33%">
+                        <h5 class="wp-block-heading has-text-align-center" style="margin-top:0;margin-bottom:0">
+                            <strong>Najnovšie Blockchain Údaje</strong>
+                        </h5>
+
+
+
+                        <script>
+                            async function fetchData() {
+                                try {
+                                    const response = await fetch('https://pepeblocks.com/ext/getsummary');
+                                    const data = await response.json();
+
+                                    document.querySelector('.difficulty').textContent = data.difficulty.toLocaleString();
+                                    document.querySelector('.max-supply').textContent = data.supply.toLocaleString();
+                                    document.querySelector('.block-height').textContent = data.blockcount.toLocaleString();
+
+                                    let hashrate = data.hashrate;
+                                    let units = ['H/s', 'KH/s', 'MH/s', 'GH/s', 'TH/s', 'PH/s', 'EH/s'];
+                                    let i = 0;
+                                    while (hashrate >= 1000 && i < units.length - 1) {
+                                        hashrate /= 1000;
+                                        i++;
+                                    }
+                                    document.querySelector('.net-hashrate').textContent = hashrate.toFixed(2) + ' ' + units[i];
+                                } catch (error) {
+                                    console.error('Error fetching data:', error);
+                                }
+                            }
+
+                            setInterval(fetchData, 60000); // Update every 1 minute
+                            window.onload = fetchData; // Fetch immediately on load
+                        </script>
+
+
+
+                        <div
+                            class="wp-block-columns is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-5 wp-block-columns-is-layout-flex">
+                            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+                                <div class="wp-block-group theme-accordion-list has-custom-on-background-background-color has-background is-horizontal is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-17 wp-block-group-is-layout-flex"
+                                    style="border-radius:24px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-8);padding-right:var(--wp--preset--spacing--spacing-8);padding-bottom:var(--wp--preset--spacing--spacing-8);padding-left:var(--wp--preset--spacing--spacing-8);box-shadow:var(--wp--preset--shadow--natural)">
+                                    <h3 class="wp-block-heading has-white-color has-text-color has-link-color has-p-1-font-size wp-elements-e645bea6f2d9ff1b7949cd6e67ab4f6b"
+                                        style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-style:normal;font-weight:600">
+                                        Výška</h3>
+                                </div>
+                            </div>
+
+
+
+                            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+                                <div class="wp-block-group theme-accordion-list has-custom-on-background-background-color has-background is-horizontal is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-18 wp-block-group-is-layout-flex"
+                                    style="border-radius:24px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-8);padding-right:var(--wp--preset--spacing--spacing-8);padding-bottom:var(--wp--preset--spacing--spacing-8);padding-left:var(--wp--preset--spacing--spacing-8);box-shadow:var(--wp--preset--shadow--natural)">
+                                    <h3 class="wp-block-heading has-white-color has-text-color has-link-color has-p-1-font-size wp-elements-7d680abe669d3273566bbf0490e0a1df"
+                                        style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-style:normal;font-weight:600">
+                                        Zásoba</h3>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div
+                            class="wp-block-columns is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-6 wp-block-columns-is-layout-flex">
+                            <div class="wp-block-column is-layout-flow wp-container-core-column-is-layout-15 wp-block-column-is-layout-flow"
+                                style="padding-top:0;padding-bottom:0">
+                                <p
+                                    class="has-text-align-center block-height has-white-color has-text-color has-link-color wp-elements-4d9e0ab5a0ed7511bda62fe7f3cfab59">
+                                    Načítavam...</p>
+                            </div>
+
+
+
+                            <div class="wp-block-column has-white-color has-text-color has-link-color wp-elements-3f23227c922e80d31e147429c80c0028 is-layout-flow wp-container-core-column-is-layout-16 wp-block-column-is-layout-flow"
+                                style="padding-top:0;padding-bottom:0">
+                                <p class="has-text-align-center max-supply has-white-color has-text-color has-link-color wp-elements-f7adbe40be4b566017603b2b0ab82f3d"
+                                    style="padding-top:0;padding-bottom:0">Načítavam...</p>
+                            </div>
+                        </div>
+
+
+
+                        <div
+                            class="wp-block-columns is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-7 wp-block-columns-is-layout-flex">
+                            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+                                <div class="wp-block-group theme-accordion-list has-custom-on-background-background-color has-background is-horizontal is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-19 wp-block-group-is-layout-flex"
+                                    style="border-radius:24px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-8);padding-right:var(--wp--preset--spacing--spacing-8);padding-bottom:var(--wp--preset--spacing--spacing-8);padding-left:var(--wp--preset--spacing--spacing-8);box-shadow:var(--wp--preset--shadow--natural)">
+                                    <h3 class="wp-block-heading has-white-color has-text-color has-link-color has-p-1-font-size wp-elements-ccecc23b0e63750a823f4e59125bfed2"
+                                        style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-style:normal;font-weight:600">
+                                        Sieť</h3>
+                                </div>
+                            </div>
+
+
+
+                            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+                                <div class="wp-block-group theme-accordion-list has-custom-on-background-background-color has-background is-horizontal is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-20 wp-block-group-is-layout-flex"
+                                    style="border-radius:24px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-8);padding-right:var(--wp--preset--spacing--spacing-8);padding-bottom:var(--wp--preset--spacing--spacing-8);padding-left:var(--wp--preset--spacing--spacing-8);box-shadow:var(--wp--preset--shadow--natural)">
+                                    <h3 class="wp-block-heading has-white-color has-text-color has-link-color has-p-1-font-size wp-elements-32635893914d8e0d5d7c9afc552dd553"
+                                        style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-style:normal;font-weight:600">
+                                        Náročnosť</h3>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div
+                            class="wp-block-columns is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-8 wp-block-columns-is-layout-flex">
+                            <div class="wp-block-column has-white-color has-text-color has-link-color wp-elements-d0d7622f4536ea8e64132b7da4cda394 is-layout-flow wp-container-core-column-is-layout-19 wp-block-column-is-layout-flow"
+                                style="padding-top:0;padding-bottom:0">
+                                <p
+                                    class="has-text-align-center net-hashrate has-white-color has-text-color has-link-color wp-elements-c1108da655841c15163aae4ae12abbb1">
+                                    Načítavam...</p>
+                            </div>
+
+
+
+                            <div class="wp-block-column has-white-color has-text-color has-link-color wp-elements-7dfeb62ca1f31f1977b9826a6860bc7d is-layout-flow wp-container-core-column-is-layout-20 wp-block-column-is-layout-flow"
+                                style="padding-top:0;padding-bottom:0">
+                                <p
+                                    class="has-text-align-center difficulty has-white-color has-text-color has-link-color wp-elements-cf0d858f9db78bdf9b475c72f002d576">
+                                    Načítavam...</p>
+                            </div>
+                        </div>
+
+
+
+                        <p
+                            class="has-text-align-center has-white-color has-text-color has-link-color wp-elements-a94ac141ea8915971b7678f9d7c04871">
+                            Sieť Pepecoinu je zabezpečená prostredníctvom zlúčenej ťažby (merged mining), čím poskytuje
+                            rovnakú úroveň robustnosti ako Dogecoin a Litecoin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="wp-block-template-part">
+            <div class="wp-block-group alignfull has-background-color has-white-color has-custom-on-background-background-color has-text-color has-background has-link-color wp-elements-1178599333fa31f4d36e024a6d802024 is-vertical is-content-justification-stretch is-layout-flex wp-container-core-group-is-layout-22 wp-block-group-is-layout-flex"
+                style="min-height:28vh;margin-top:0;margin-bottom:0;padding-top:1.2rem;padding-right:2.4rem;padding-bottom:1.2rem;padding-left:2.4rem">
+                <div
+                    class="wp-block-columns alignwide has-white-color has-text-color has-link-color has-small-font-size wp-elements-af0f4fd8e29920aa3548fbd424bb9236 is-layout-flex wp-container-core-columns-is-layout-10 wp-block-columns-is-layout-flex">
+                    <div
+                        class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+                        <figure class="wp-block-image size-large"><a href="https://pepecoin.org/" target="_blank"
+                                rel=" noreferrer noopener"><img decoding="async" src="/images/P_noBackground_RGB.svg"
+                                    alt="Pepecoin logo" /></a></figure>
+
+
+
+                        <p
+                            class="has-white-color has-text-color has-link-color wp-elements-d6a30f5e387b4616804a3c1052f8b58f">
+                            Webstránka poskytnutá od <br><strong>Mr Bachelor emgi</strong></p>
+                    </div>
+
+
+
+                    <div
+                        class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+                        <p class="has-text-align-center has-white-color has-text-color has-link-color wp-elements-64fe616665fbdafd39c8f77d70dbbe53"
+                            style="margin-bottom:0;font-size:12px">Pomôžte nám udržiavať túto webovú stránku v chode
+                            a
+                            aktuálnu.</p>
+
+
+
+                        <div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3 wp-block-buttons-is-layout-flex"
+                            style="margin-top:var(--wp--preset--spacing--spacing-8)">
+                            <div class="wp-block-button has-custom-font-size white-button" style="font-size:12px"><a
+                                    class="wp-block-button__link has-text-base-color has-white-background-color has-text-color has-background has-link-color wp-element-button"
+                                    href="https://pepelum.site/donations/"
+                                    style="padding-top:var(--wp--preset--spacing--spacing-8);padding-right:var(--wp--preset--spacing--spacing-8);padding-bottom:var(--wp--preset--spacing--spacing-8);padding-left:var(--wp--preset--spacing--spacing-8);box-shadow:var(--wp--preset--shadow--natural)">Podporiť</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div
+                        class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+                        <h6 class="wp-block-heading has-text-align-center">Peňaženky</h6>
+
+
+                        <nav class="has-small-font-size items-justified-center is-vertical no-wrap wp-block-navigation is-content-justification-center is-nowrap is-layout-flex wp-container-core-navigation-is-layout-2 wp-block-navigation-is-layout-flex"
+                            aria-label="Footer navigation">
+                            <ul
+                                class="wp-block-navigation__container has-small-font-size items-justified-center is-vertical no-wrap wp-block-navigation has-small-font-size">
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content"
+                                        href="https://www.coinomi.com/en/downloads/" target="_blank"><span
+                                            class="wp-block-navigation-item__label">Coinomi</span></a></li>
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content"
+                                        href="https://komodoplatform.com/en/wallet/" target="_blank"><span
+                                            class="wp-block-navigation-item__label">Komodo</span></a></li>
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content"
+                                        href="https://github.com/mrtnetwork/mrtwallet" target="_blank"><span
+                                            class="wp-block-navigation-item__label">MRT</span></a></li>
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content"
+                                        href="https://github.com/pepecoinppc/pepecoin/releases" target="_blank"><span
+                                            class="wp-block-navigation-item__label">Pepecoin
+                                            Core</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+
+
+                    <div
+                        class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+                        <h6 class="wp-block-heading has-text-align-center">Burzy</h6>
+
+
+                        <nav class="has-small-font-size items-justified-center is-vertical no-wrap wp-block-navigation is-content-justification-center is-nowrap is-layout-flex wp-container-core-navigation-is-layout-3 wp-block-navigation-is-layout-flex"
+                            aria-label="Pätička navigácia">
+                            <ul
+                                class="wp-block-navigation__container has-small-font-size items-justified-center is-vertical no-wrap wp-block-navigation has-small-font-size">
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content"
+                                        href="https://www.mexc.com/acquisition/custom-sign-up?shareCode=mexc-e8cwf"
+                                        target="_blank"><span class="wp-block-navigation-item__label">MEXC</span></a>
+                                </li>
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content"
+                                        href="https://www.coinex.com/register?rc=3vxw2" target="_blank"><span
+                                            class="wp-block-navigation-item__label">CoinEx</span></a></li>
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content"
+                                        href="https://www.bit.com/spot?pair=PEP-USDT&#038;code=SR5DD7"
+                                        target="_blank"><span class="wp-block-navigation-item__label">Bit.com</span></a>
+                                </li>
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content"
+                                        href="https://stakecube.net/app/exchange/pep_usdt?team=DJ5891"
+                                        target="_blank"><span
+                                            class="wp-block-navigation-item__label">StakeCube</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+
+
+                    <div
+                        class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+                        <h6 class="wp-block-heading has-text-align-center">Explorery</h6>
+
+
+                        <nav class="has-small-font-size items-justified-center is-vertical no-wrap wp-block-navigation is-content-justification-center is-nowrap is-layout-flex wp-container-core-navigation-is-layout-4 wp-block-navigation-is-layout-flex"
+                            aria-label="Pätička navigácia 2">
+                            <ul
+                                class="wp-block-navigation__container has-small-font-size items-justified-center is-vertical no-wrap wp-block-navigation has-small-font-size">
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content" href="https://pepeblocks.com/"
+                                        target="_blank"><span
+                                            class="wp-block-navigation-item__label">PepeBlocks</span></a></li>
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content" href="https://pepecoinexplorer.com/"
+                                        target="_blank"><span
+                                            class="wp-block-navigation-item__label">PepecoinExplorer</span></a></li>
+                            </ul>
+                        </nav>
+
+
+                        <div style="height:24px" aria-hidden="true" class="wp-block-spacer"></div>
+                    </div>
+
+
+
+                    <div
+                        class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+                        <h6 class="wp-block-heading has-text-align-center">Faucety</h6>
+
+
+                        <nav class="has-small-font-size items-justified-center is-vertical no-wrap wp-block-navigation is-content-justification-center is-nowrap is-layout-flex wp-container-core-navigation-is-layout-5 wp-block-navigation-is-layout-flex"
+                            aria-label="Pätička navigácia 4">
+                            <ul
+                                class="wp-block-navigation__container has-small-font-size items-justified-center is-vertical no-wrap wp-block-navigation has-small-font-size">
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content" href="https://faucet.pepeblocks.com/"
+                                        target="_blank"><span
+                                            class="wp-block-navigation-item__label">PepeBlocks</span></a></li>
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content" href="https://pepe.ravener.is-a.dev/"
+                                        target="_blank"><span class="wp-block-navigation-item__label">Ravener</span></a>
+                                </li>
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content"
+                                        href="https://stakecube.net/app/community" target="_blank"><span
+                                            class="wp-block-navigation-item__label">StakeCube</span></a></li>
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content"
+                                        href="https://toss.nestex.one/faucet.aspx" target="_blank"><span
+                                            class="wp-block-navigation-item__label">Toss</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+
+
+                    <div
+                        class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+                        <h6 class="wp-block-heading has-text-align-center">Moje Projekty</h6>
+
+
+                        <nav class="has-small-font-size items-justified-center is-vertical no-wrap wp-block-navigation is-content-justification-center is-nowrap is-layout-flex wp-container-core-navigation-is-layout-6 wp-block-navigation-is-layout-flex"
+                            aria-label="Pätička navigácia 3">
+                            <ul
+                                class="wp-block-navigation__container has-small-font-size items-justified-center is-vertical no-wrap wp-block-navigation has-small-font-size">
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content" href="https://flappypepe.com/"
+                                        target="_blank"><span class="wp-block-navigation-item__label">Flappy
+                                            PEPE</span></a></li>
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content" href="https://pepecoin-nodes.com/"
+                                        target="_blank"><span class="wp-block-navigation-item__label">Mapa Pepecoin
+                                            Nodiek</span></a></li>
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content"
+                                        href="https://github.com/bachelor-emgi/electrumx-pep" target="_blank"><span
+                                            class="wp-block-navigation-item__label">ElectrumX v Dockeri</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-    <footer class="bg-dark text-white text-center p-4 mt-4">
-        <p>Mr Bachelor emgi</p>
-        <a href="https://pepelum.site/donations/" target="_blank" style="color: white;">Podporte ma</a>
-    </footer>
+    <script src="/scripts/frontend.js" id="FWP_scripts-js"></script>
+    <script src="/scripts/main.js" id="FWP_custom-scripts-js"></script>
+    <script src="/scripts/scroll-to-top.js" id="frontis-scroll-to-top-js"></script>
+    <script src="/scripts/smooth-scroll.js" id="frontis-smooth-scroll-js"></script>
+    <script id="frontis-sticky-header-js-extra">
+        var headerData = { "sticky_header": "1", "sticky_header_offset": "6" };
+    </script>
+    <script src="/scripts/sticky-header.js" id="frontis-sticky-header-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+</html>
