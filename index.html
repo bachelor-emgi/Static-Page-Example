@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="sk-SK">
-
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
         img:is([sizes="auto" i], [sizes^="auto," i]) {
@@ -878,8 +877,8 @@
             --wp--preset--color--error: #E43242;
             --wp--preset--color--error-50: #FCEBEC;
             --wp--preset--color--body-purple: #CCFFFC;
-            --wp--preset--color--body-neutral: #CCFFFC;
-            --wp--preset--color--body-neutral-50: #F4F0FF;
+            --wp--preset--color--body-neutral: white;
+            --wp--preset--color--body-neutral-50: white;
             --wp--preset--color--text-base: #090A11;
             --wp--preset--color--heading: #FFFFFF;
             --wp--preset--color--primary: #002E2C;
@@ -2594,22 +2593,27 @@
                                                 </li>
                                                 <li class=" wp-block-navigation-item wp-block-navigation-link"><a
                                                         class="wp-block-navigation-item__content"
-                                                        href="https://pepelum.site/guides"><span
+                                                        href="/pages/guides.html"><span
                                                             class="wp-block-navigation-item__label">Návody</span></a>
                                                 </li>
                                                 <li class=" wp-block-navigation-item wp-block-navigation-link"><a
                                                         class="wp-block-navigation-item__content"
-                                                        href="https://pepelum.site/roadmap"><span
+                                                        href="/pages/wallets-list.html"><span
+                                                            class="wp-block-navigation-item__label">Peňaženky</span></a>
+                                                </li>
+                                                <li class=" wp-block-navigation-item wp-block-navigation-link"><a
+                                                        class="wp-block-navigation-item__content"
+                                                        href="/pages/roadmap.html"><span
                                                             class="wp-block-navigation-item__label">Roadmapa</span></a>
                                                 </li>
                                                 <li class=" wp-block-navigation-item wp-block-navigation-link"><a
                                                         class="wp-block-navigation-item__content"
-                                                        href="https://pepelum.site/other"><span
+                                                        href="/pages/other.html"><span
                                                             class="wp-block-navigation-item__label">Iné</span></a>
                                                 </li>
                                                 <li class=" wp-block-navigation-item wp-block-navigation-link"><a
                                                         class="wp-block-navigation-item__content"
-                                                        href="https://pepelum.site/electrumx/"><span
+                                                        href="/pages/electrumx.html"><span
                                                             class="wp-block-navigation-item__label">ElectrumX</span></a>
                                                 </li>
                                             </ul>
@@ -2618,7 +2622,7 @@
                                                 class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex fb-hide-desktop fb-hide-tablet">
                                                 <div class="wp-block-button"><a
                                                         class="wp-block-button__link has-custom-background-color has-white-background-color has-text-color has-background has-link-color wp-element-button"
-                                                        href="https://pepelum.site/exchanges"
+                                                        href="/pages/exchanges.html"
                                                         style="box-shadow:var(--wp--preset--shadow--natural)"
                                                         rel="white-button-menu">Kúpiť PEP</a></div>
                                             </div>
@@ -2633,8 +2637,8 @@
                         <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex fb-hide-mobile">
                             <div class="wp-block-button white-button" style="font-style:normal;font-weight:500"><a
                                     class="wp-block-button__link has-primary-color has-white-background-color has-text-color has-background has-link-color wp-element-button"
-                                    href="https://pepelum.site/exchanges"
-                                    style="box-shadow:var(--wp--preset--shadow--natural)">Kúpiť PEP</a>
+                                    href="/pages/exchanges.html"
+                                    style="box-shadow:var(--wp--preset--shadow--natural)">Kúpiť Pepecoin</a>
                             </div>
                         </div>
                     </div>
@@ -2686,12 +2690,13 @@
 
                         <div class="accordion" id="accordionFAQ">
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <p class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        data-bs-target="#collapseOne" aria-expanded="false"
+                                        alt="Šípka na otvorenie alebo zatvorenie FAQ" aria-controls="collapseOne">
                                         Čo je to Ribbit?
                                     </button>
-                                </h2>
+                                </p>
                                 <div id="collapseOne" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionFAQ">
                                     <div class="accordion-body">
@@ -2701,12 +2706,13 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <p class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        data-bs-target="#collapseTwo" aria-expanded="false"
+                                        alt="Šípka na otvorenie alebo zatvorenie FAQ" aria-controls="collapseTwo">
                                         Ako vyzerá Pepecoin adresa?
                                     </button>
-                                </h2>
+                                </p>
                                 <div id="collapseTwo" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionFAQ">
                                     <div class="accordion-body">
@@ -2716,13 +2722,13 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <p class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
+                                        alt="Šípka na otvorenie alebo zatvorenie FAQ" aria-controls="collapseThree">
                                         Aký je symbol meny pre Pepecoin?
                                     </button>
-                                </h2>
+                                </p>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionFAQ">
                                     <div class="accordion-body">
@@ -2732,13 +2738,13 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <p class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFour" aria-expanded="true"
                                         aria-controls="collapseFour">
                                         Kto vytvoril Pepecoin?
                                     </button>
-                                </h2>
+                                </p>
                                 <div id="collapseFour" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionFAQ">
                                     <div class="accordion-body">
@@ -2755,13 +2761,13 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <p class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseSeven" aria-expanded="false"
-                                        aria-controls="collapseSeven">
+                                        alt="Šípka na otvorenie alebo zatvorenie FAQ" aria-controls="collapseSeven">
                                         Coin vs Token
                                     </button>
-                                </h2>
+                                </p>
                                 <div id="collapseSeven" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionFAQ">
                                     <div class="accordion-body">
@@ -2781,13 +2787,13 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <p class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFive" aria-expanded="false"
-                                        aria-controls="collapseFive">
+                                        alt="Šípka na otvorenie alebo zatvorenie FAQ" aria-controls="collapseFive">
                                         Prečo bol vytvorený Pepecoin?
                                     </button>
-                                </h2>
+                                </p>
                                 <div id="collapseFive" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionFAQ">
                                     <div class="accordion-body">
@@ -2817,12 +2823,13 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <p class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        data-bs-target="#collapseSix" aria-expanded="false"
+                                        alt="Šípka na otvorenie alebo zatvorenie FAQ" aria-controls="collapseSix">
                                         Je Pepecoin Core bezpečný na používanie?
                                     </button>
-                                </h2>
+                                </p>
                                 <div id="collapseSix" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionFAQ">
                                     <div class="accordion-body">
@@ -2847,13 +2854,13 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <p class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseNine" aria-expanded="false"
-                                        aria-controls="collapseNine">
+                                        alt="Šípka na otvorenie alebo zatvorenie FAQ" aria-controls="collapseNine">
                                         Tokenomika
                                     </button>
-                                </h2>
+                                </p>
                                 <div id="collapseNine" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionFAQ">
                                     <div class="accordion-body">
@@ -2863,54 +2870,126 @@
                                         <p>Po bloku 600k zostane bloková odmena navždy 10,000 Pepecoinov. To zabezpečí,
                                             že
                                             ťažiari budú mať spoľahlivý prúd mincí na ťažbu.</p>
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th>Blok</th>
-                                                    <th>Odmena</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1–99,999</td>
-                                                    <td>500,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>100,000–199,999</td>
-                                                    <td>250,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>200,000–299,999</td>
-                                                    <td>125,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>300,000–399,999</td>
-                                                    <td>62,500</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>400,000–499,999</td>
-                                                    <td>31,250</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>500,000–599,999</td>
-                                                    <td>15,625</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>600,000+</td>
-                                                    <td>10,000</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <style>
+                                            .table-container {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                width: 100%;
+                                                margin-top: 24px !important;
+                                                margin-bottom: 24px !important;
+                                            }
+
+                                            .styled-table {
+                                                width: 90% !important;
+                                                border-collapse: collapse !important;
+                                                background-color: #393939 !important;
+                                                border-radius: 24px !important;
+                                                overflow: hidden !important;
+                                            }
+
+                                            .styled-table thead {
+                                                background-color: #595959 !important;
+                                            }
+
+                                            .styled-table thead th {
+                                                background-color: #595959 !important;
+                                                text-align: center !important;
+                                                padding: 12px 15px !important;
+                                            }
+
+                                            .styled-table thead tr {
+                                                border-radius: 24px 24px 0 0 !important;
+                                            }
+
+                                            .styled-table th,
+                                            .styled-table td {
+                                                padding: 12px 15px !important;
+                                                text-align: left !important;
+                                            }
+
+                                            .styled-table tbody tr:last-child td {
+                                                border-radius: 0 0 24px 24px !important;
+                                            }
+
+                                            @media (max-width: 600px) {
+
+                                                .styled-table th,
+                                                .styled-table td {
+                                                    display: block !important;
+                                                    width: 100% !important;
+                                                    box-sizing: border-box !important;
+                                                }
+
+                                                .styled-table tr {
+                                                    display: flex !important;
+                                                    flex-direction: column !important;
+                                                    margin-bottom: 10px !important;
+                                                }
+
+                                                .styled-table thead {
+                                                    display: none !important;
+                                                }
+
+                                                .styled-table td:before {
+                                                    content: attr(data-label) !important;
+                                                    font-weight: bold !important;
+                                                    margin-bottom: 5px !important;
+                                                    display: block !important;
+                                                }
+                                            }
+                                        </style>
+                                        <div class="table-container">
+                                            <table class="styled-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Blok</th>
+                                                        <th>Odmena v Pepecoinoch</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td data-label="Block">1-99,999</td>
+                                                        <td data-label="Reward in Pepecoin">500,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Block">100,000-199,999</td>
+                                                        <td data-label="Reward in Pepecoin">250,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Block">200,000-299,999</td>
+                                                        <td data-label="Reward in Pepecoin">125,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Block">300,000-399,999</td>
+                                                        <td data-label="Reward in Pepecoin">62,500</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Block">400,000-499,999</td>
+                                                        <td data-label="Reward in Pepecoin">31,250</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Block">500,000-599,999</td>
+                                                        <td data-label="Reward in Pepecoin">15,625</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Block">600,000+</td>
+                                                        <td data-label="Reward in Pepecoin">10,000</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <p class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                        data-bs-target="#collapseTen" aria-expanded="false"
+                                        alt="Šípka na otvorenie alebo zatvorenie FAQ" aria-controls="collapseTen">
                                         Prečo je tak veľa Pepe kryptomien?
                                     </button>
-                                </h2>
+                                </p>
                                 <div id="collapseTen" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionFAQ">
                                     <div class="accordion-body">
@@ -2921,13 +3000,13 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <p class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseEleven" aria-expanded="false"
-                                        aria-controls="collapseEleven">
+                                        alt="Šípka na otvorenie alebo zatvorenie FAQ" aria-controls="collapseEleven">
                                         Kedy bude Pepecoin na Uniswap, Metamask, atď.?
                                     </button>
-                                </h2>
+                                </p>
                                 <div id="collapseEleven" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionFAQ">
                                     <div class="accordion-body">
@@ -2937,13 +3016,13 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <p class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwelve" aria-expanded="false"
-                                        aria-controls="collapseTwelve">
+                                        alt="Šípka na otvorenie alebo zatvorenie FAQ" aria-controls="collapseTwelve">
                                         Aká je adresa kontraktu pre Pepecoin?
                                     </button>
-                                </h2>
+                                </p>
                                 <div id="collapseTwelve" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionFAQ">
                                     <div class="accordion-body">
@@ -2953,12 +3032,13 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <p class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                                        data-bs-target="#collapse15" aria-expanded="false"
+                                        alt="Šípka na otvorenie alebo zatvorenie FAQ" aria-controls="collapse15">
                                         Bol Pepecoin vytvorený ako vtip?
                                     </button>
-                                </h2>
+                                </p>
                                 <div id="collapse15" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
                                     <div class="accordion-body">
                                         <p>Nie. Pepecoin bol vytvorený s úmyslom byť najlepšou voľbou ako Pepe
@@ -2971,12 +3051,13 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <p class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                                        data-bs-target="#collapse20" aria-expanded="false"
+                                        alt="Šípka na otvorenie alebo zatvorenie FAQ" aria-controls="collapse20">
                                         Ako zistím, či mám správny Pepecoin?
                                     </button>
-                                </h2>
+                                </p>
                                 <div id="collapse20" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
                                     <div class="accordion-body">
                                         <p>Skontrolujte adresu. Mala by začínať písmenom P. Ak vaša adresa začína na 0x,
@@ -2989,26 +3070,22 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <p class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                                        data-bs-target="#collapse17" aria-expanded="false"
+                                        alt="Šípka na otvorenie alebo zatvorenie FAQ" aria-controls="collapse17">
                                         Čo znamená "komunitne zameraný"?
                                     </button>
-                                </h2>
+                                </p>
                                 <div id="collapse17" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
                                     <div class="accordion-body">
-                                        <p>Doge meme má jednu hlavnú kryptomenu a komunitu <a
-                                                href="https://reddit.com/r/dogecoin" target="_blank">r/Dogecoin</a>.
+                                        <p>Doge meme má jednu hlavnú kryptomenu a komunitu
+                                            na Reddite.
                                             Veríme, že aj Pepe meme by mal mať jednu kryptomenu
-                                            a komunitu <a href="https://reddit.com/r/pepecoin"
-                                                target="_blank">r/Pepecoin</a>. Od
+                                            a komunitu takisto na tej istej platforme. Od
                                             začiatku sme sa snažili vytvoriť najlepší možný coin a spojiť všetkých
                                             fanúšikov Pepe do
                                             jednej silnej komunity.</p>
-                                        <p>Pridajte sa k nám, radi vás privítame!</p>
-                                        <p><a href="https://t.me/PepecoinGroup" target="_blank">Telegram</a> | <a
-                                                href="https://reddit.com/r/pepecoin" target="_blank">Reddit</a> | <a
-                                                href="https://pepecoin.org/discord" target="_blank">Discord</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -3025,7 +3102,7 @@
                                 style="border-radius:24px;min-height:0px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-32);padding-right:var(--wp--preset--spacing--spacing-32);padding-bottom:var(--wp--preset--spacing--spacing-32);padding-left:var(--wp--preset--spacing--spacing-32);box-shadow:var(--wp--preset--shadow--natural)">
                                 <script>
                                     document.querySelector('.guide-wallets').addEventListener('click', function () {
-                                        window.location.href = 'https://pepelum.site/guides';
+                                        window.location.href = '/pages/guides.html';
                                     });
                                 </script>
 
@@ -3069,7 +3146,7 @@
                                 style="border-radius:24px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-32);padding-right:var(--wp--preset--spacing--spacing-32);padding-bottom:var(--wp--preset--spacing--spacing-32);padding-left:var(--wp--preset--spacing--spacing-32);box-shadow:var(--wp--preset--shadow--natural)">
                                 <script>
                                     document.querySelector('.guide-get-pepecoin').addEventListener('click', function () {
-                                        window.location.href = '/roadmap';
+                                        window.location.href = '/pages/roadmap.html';
                                     });
                                 </script>
 
@@ -3108,7 +3185,7 @@
                                 style="border-radius:24px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-32);padding-right:var(--wp--preset--spacing--spacing-32);padding-bottom:var(--wp--preset--spacing--spacing-32);padding-left:var(--wp--preset--spacing--spacing-32);box-shadow:var(--wp--preset--shadow--natural)">
                                 <script>
                                     document.querySelector('.guide-tip-bots').addEventListener('click', function () {
-                                        window.location.href = '/other';
+                                        window.location.href = '/pages/other.html';
                                     });
                                 </script>
 
@@ -3153,7 +3230,7 @@
                                 style="border-radius:24px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-32);padding-right:var(--wp--preset--spacing--spacing-32);padding-bottom:var(--wp--preset--spacing--spacing-32);padding-left:var(--wp--preset--spacing--spacing-32);box-shadow:var(--wp--preset--shadow--natural)">
                                 <script>
                                     document.querySelector('.guide-mining').addEventListener('click', function () {
-                                        window.location.href = 'https://pepelum.site/electrumx';
+                                        window.location.href = '/pages/electrumx.html';
                                     });
                                 </script>
 
@@ -3227,14 +3304,8 @@
                             style="border-radius:24px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-8);padding-right:var(--wp--preset--spacing--spacing-8);padding-bottom:var(--wp--preset--spacing--spacing-8);padding-left:var(--wp--preset--spacing--spacing-8);box-shadow:var(--wp--preset--shadow--natural)">
                             <h3 class="wp-block-heading has-white-color has-text-color has-link-color has-p-1-font-size wp-elements-6acd291ae00e1a3f10c33ae5586a7974"
                                 style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-style:normal;font-weight:600">
-                                Sociálne Médiá</h3>
+                                Sledujte PEP na X</h3>
                         </div>
-
-
-
-                        <p class="has-text-align-center has-white-color has-text-color has-link-color wp-elements-22dbc863bc296080b7e8e6abfa93e601"
-                            style="margin-top:5px;margin-bottom:5px">Pepecoin je možné sledovať na:</p>
-
 
 
                         <ul class="wp-block-social-links aligncenter is-content-justification-center is-layout-flex wp-container-core-social-links-is-layout-1 wp-block-social-links-is-layout-flex"
@@ -3246,47 +3317,85 @@
                                         <path
                                             d="M13.982 10.622 20.54 3h-1.554l-5.693 6.618L8.745 3H3.5l6.876 10.007L3.5 21h1.554l6.012-6.989L15.868 21h5.245l-7.131-10.378Zm-2.128 2.474-.697-.997-5.543-7.93H8l4.474 6.4.697.996 5.815 8.318h-2.387l-4.745-6.787Z" />
                                     </svg><span class="wp-block-social-link-label screen-reader-text">X</span></a></li>
+                        </ul>
 
-                            <li class="wp-social-link wp-social-link-tiktok  wp-block-social-link"><a
-                                    href="https://www.tiktok.com/@pepecoin_" class="wp-block-social-link-anchor"><svg
-                                        width="24" height="24" viewBox="0 0 32 32" version="1.1"
+                        <div class="wp-block-group theme-accordion-list has-custom-on-background-background-color has-background is-horizontal is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-17 wp-block-group-is-layout-flex"
+                            style="border-radius:24px;margin-top:var(--wp--preset--spacing--spacing-16);margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-8);padding-right:var(--wp--preset--spacing--spacing-8);padding-bottom:var(--wp--preset--spacing--spacing-8);padding-left:var(--wp--preset--spacing--spacing-8);box-shadow:var(--wp--preset--shadow--natural)">
+                            <h3 class="wp-block-heading has-text-align-center has-white-color has-text-color has-link-color has-p-1-font-size wp-elements-97b5495f66988b14ca6eea643df493bf"
+                                style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-style:normal;font-weight:600">
+                                Kto zdieľa, ten pomáha</h3>
+                        </div>
+
+                        <ul
+                            class="wp-block-outermost-social-sharing has-normal-icon-size is-style-default is-content-justification-center is-layout-flex wp-container-outermost-social-sharing-is-layout-1 wp-block-social-sharing-is-layout-flex">
+                            <li
+                                class="outermost-social-sharing-link outermost-social-sharing-link-facebook  wp-block-outermost-social-sharing-link">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpepecoin.sk&amp;title=Pepecoin"
+                                    aria-label="Share on Facebook" rel="noopener nofollow" target="_blank"
+                                    class="wp-block-outermost-social-sharing-link-anchor">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" version="1.1"
                                         xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                                        <path
-                                            d="M16.708 0.027c1.745-0.027 3.48-0.011 5.213-0.027 0.105 2.041 0.839 4.12 2.333 5.563 1.491 1.479 3.6 2.156 5.652 2.385v5.369c-1.923-0.063-3.855-0.463-5.6-1.291-0.76-0.344-1.468-0.787-2.161-1.24-0.009 3.896 0.016 7.787-0.025 11.667-0.104 1.864-0.719 3.719-1.803 5.255-1.744 2.557-4.771 4.224-7.88 4.276-1.907 0.109-3.812-0.411-5.437-1.369-2.693-1.588-4.588-4.495-4.864-7.615-0.032-0.667-0.043-1.333-0.016-1.984 0.24-2.537 1.495-4.964 3.443-6.615 2.208-1.923 5.301-2.839 8.197-2.297 0.027 1.975-0.052 3.948-0.052 5.923-1.323-0.428-2.869-0.308-4.025 0.495-0.844 0.547-1.485 1.385-1.819 2.333-0.276 0.676-0.197 1.427-0.181 2.145 0.317 2.188 2.421 4.027 4.667 3.828 1.489-0.016 2.916-0.88 3.692-2.145 0.251-0.443 0.532-0.896 0.547-1.417 0.131-2.385 0.079-4.76 0.095-7.145 0.011-5.375-0.016-10.735 0.025-16.093z" />
-                                    </svg><span class="wp-block-social-link-label screen-reader-text">TikTok</span></a>
-                            </li>
-
-                            <li class="wp-social-link wp-social-link-youtube  wp-block-social-link"><a
-                                    href="https://www.youtube.com/@pepecoin" class="wp-block-social-link-anchor"><svg
-                                        width="24" height="24" viewBox="0 0 24 24" version="1.1"
-                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                                        <path
-                                            d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z">
-                                        </path>
-                                    </svg><span class="wp-block-social-link-label screen-reader-text">YouTube</span></a>
-                            </li>
-
-                            <li class="wp-social-link wp-social-link-facebook  wp-block-social-link"><a
-                                    href="https://www.facebook.com/profile.php?id=61559208990076"
-                                    class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24"
-                                        version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                        focusable="false">
                                         <path
                                             d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z">
                                         </path>
-                                    </svg><span
-                                        class="wp-block-social-link-label screen-reader-text">Facebook</span></a>
+                                    </svg> <span
+                                        class="wp-block-outermost-social-sharing-link-label screen-reader-text">
+                                        Share on Facebook </span>
+                                </a>
+                            </li>
+
+
+                            <li
+                                class="outermost-social-sharing-link outermost-social-sharing-link-x  wp-block-outermost-social-sharing-link">
+                                <a href="https://x.com/share?url=https%3A%2F%2Fpepecoin.sk&amp;text=Pepecoin"
+                                    aria-label="Share on X" rel="noopener nofollow" target="_blank"
+                                    class="wp-block-outermost-social-sharing-link-anchor">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                        <path
+                                            d="M13.982 10.622 20.54 3h-1.554l-5.693 6.618L8.745 3H3.5l6.876 10.007L3.5 21h1.554l6.012-6.989L15.868 21h5.245l-7.131-10.378Zm-2.128 2.474-.697-.997-5.543-7.93H8l4.474 6.4.697.996 5.815 8.318h-2.387l-4.745-6.787Z">
+                                        </path>
+                                    </svg> <span
+                                        class="wp-block-outermost-social-sharing-link-label screen-reader-text">
+                                        Share on X </span>
+                                </a>
+                            </li>
+
+
+                            <li
+                                class="outermost-social-sharing-link outermost-social-sharing-link-bluesky  wp-block-outermost-social-sharing-link">
+                                <a href="https://bsky.app/intent/compose?text=Pepecoin%20—%20https%3A%2F%2Fpepecoin.sk"
+                                    aria-label="Share on Bluesky" rel="noopener nofollow" target="_blank"
+                                    class="wp-block-outermost-social-sharing-link-anchor">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                        <path
+                                            d="M6.3,4.2c2.3,1.7,4.8,5.3,5.7,7.2.9-1.9,3.4-5.4,5.7-7.2,1.7-1.3,4.3-2.2,4.3.9s-.4,5.2-.6,5.9c-.7,2.6-3.3,3.2-5.6,2.8,4,.7,5.1,3,2.9,5.3-5,5.2-6.7-2.8-6.7-2.8,0,0-1.7,8-6.7,2.8-2.2-2.3-1.2-4.6,2.9-5.3-2.3.4-4.9-.3-5.6-2.8-.2-.7-.6-5.3-.6-5.9,0-3.1,2.7-2.1,4.3-.9h0Z"
+                                            fill-rule="evenodd"></path>
+                                    </svg> <span
+                                        class="wp-block-outermost-social-sharing-link-label screen-reader-text">
+                                        Share on Bluesky </span>
+                                </a>
+                            </li>
+
+
+                            <li
+                                class="outermost-social-sharing-link outermost-social-sharing-link-reddit  wp-block-outermost-social-sharing-link">
+                                <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fpepecoin.sk&amp;title=Pepecoin"
+                                    aria-label="Share on Reddit" rel="noopener nofollow" target="_blank"
+                                    class="wp-block-outermost-social-sharing-link-anchor">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                        <path
+                                            d="M22 12.068a2.184 2.184 0 0 0-2.186-2.186c-.592 0-1.13.233-1.524.609-1.505-1.075-3.566-1.774-5.86-1.864l1.004-4.695 3.261.699A1.56 1.56 0 1 0 18.255 3c-.61-.001-1.147.357-1.398.877l-3.638-.77a.382.382 0 0 0-.287.053.348.348 0 0 0-.161.251l-1.112 5.233c-2.33.072-4.426.77-5.95 1.864a2.201 2.201 0 0 0-1.523-.61 2.184 2.184 0 0 0-.896 4.176c-.036.215-.053.43-.053.663 0 3.37 3.924 6.111 8.763 6.111s8.763-2.724 8.763-6.11c0-.216-.017-.449-.053-.664A2.207 2.207 0 0 0 22 12.068Zm-15.018 1.56a1.56 1.56 0 0 1 3.118 0c0 .86-.699 1.558-1.559 1.558-.86.018-1.559-.699-1.559-1.559Zm8.728 4.139c-1.076 1.075-3.119 1.147-3.71 1.147-.61 0-2.652-.09-3.71-1.147a.4.4 0 0 1 0-.573.4.4 0 0 1 .574 0c.68.68 2.114.914 3.136.914 1.022 0 2.473-.233 3.136-.914a.4.4 0 0 1 .574 0 .436.436 0 0 1 0 .573Zm-.287-2.563a1.56 1.56 0 0 1 0-3.118c.86 0 1.56.699 1.56 1.56 0 .841-.7 1.558-1.56 1.558Z">
+                                        </path>
+                                    </svg> <span
+                                        class="wp-block-outermost-social-sharing-link-label screen-reader-text">
+                                        Share on Reddit </span>
+                                </a>
                             </li>
                         </ul>
-
-
-
-                        <p
-                            class="has-text-align-center has-white-color has-text-color has-link-color wp-elements-55fe1c2081331925208da4770ccae7a3">
-                            Hoci je Pepecoin primárne aktívny na X, udržiava si aj viaceré účty na rôznych sociálnych
-                            platformách.</p>
                     </div>
-
 
 
                     <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
@@ -3541,13 +3650,13 @@
                                             class="wp-block-navigation-item__label">Komodo</span></a></li>
                                 <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
                                         class="wp-block-navigation-item__content"
-                                        href="https://github.com/mrtnetwork/mrtwallet" target="_blank"><span
-                                            class="wp-block-navigation-item__label">MRT</span></a></li>
-                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
-                                        class="wp-block-navigation-item__content"
                                         href="https://github.com/pepecoinppc/pepecoin/releases" target="_blank"><span
                                             class="wp-block-navigation-item__label">Pepecoin
                                             Core</span></a></li>
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content" href="/pages/wallets-list.html"
+                                        target="_blank"><span class="wp-block-navigation-item__label">Ostatné
+                                            Peňaženky</span></a></li>
                             </ul>
                         </nav>
                     </div>
@@ -3574,14 +3683,13 @@
                                             class="wp-block-navigation-item__label">CoinEx</span></a></li>
                                 <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
                                         class="wp-block-navigation-item__content"
-                                        href="https://www.bit.com/spot?pair=PEP-USDT&#038;code=SR5DD7"
-                                        target="_blank"><span class="wp-block-navigation-item__label">Bit.com</span></a>
-                                </li>
-                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
-                                        class="wp-block-navigation-item__content"
                                         href="https://stakecube.net/app/exchange/pep_usdt?team=DJ5891"
                                         target="_blank"><span
                                             class="wp-block-navigation-item__label">StakeCube</span></a></li>
+                                <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
+                                        class="wp-block-navigation-item__content" href="/pages/exchanges.html"
+                                        target="_blank"><span class="wp-block-navigation-item__label">Ostatné
+                                            Burzy</span></a></li>
                             </ul>
                         </nav>
                     </div>
@@ -3625,20 +3733,21 @@
                                 class="wp-block-navigation__container has-small-font-size items-justified-center is-vertical no-wrap wp-block-navigation has-small-font-size">
                                 <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
                                         class="wp-block-navigation-item__content" href="https://faucet.pepeblocks.com/"
-                                        target="_blank"><span
-                                            class="wp-block-navigation-item__label">PepeBlocks</span></a></li>
+                                        target="_blank"><span class="wp-block-navigation-item__label">PepeBlocks
+                                            Faucet</span></a></li>
                                 <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
                                         class="wp-block-navigation-item__content" href="https://pepe.ravener.is-a.dev/"
-                                        target="_blank"><span class="wp-block-navigation-item__label">Ravener</span></a>
+                                        target="_blank"><span class="wp-block-navigation-item__label">Ravener
+                                            Faucet</span></a>
                                 </li>
                                 <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
                                         class="wp-block-navigation-item__content"
                                         href="https://stakecube.net/app/community" target="_blank"><span
-                                            class="wp-block-navigation-item__label">StakeCube</span></a></li>
+                                            class="wp-block-navigation-item__label">StakeCube Faucet</span></a></li>
                                 <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
                                         class="wp-block-navigation-item__content"
                                         href="https://toss.nestex.one/faucet.aspx" target="_blank"><span
-                                            class="wp-block-navigation-item__label">Toss</span></a></li>
+                                            class="wp-block-navigation-item__label">Toss Faucet</span></a></li>
                             </ul>
                         </nav>
                     </div>
@@ -3655,17 +3764,17 @@
                             <ul
                                 class="wp-block-navigation__container has-small-font-size items-justified-center is-vertical no-wrap wp-block-navigation has-small-font-size">
                                 <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
-                                        class="wp-block-navigation-item__content" href="https://flappypepe.com/"
+                                        class="wp-block-navigation-item__content" href="/pages/flappypepe.html"
                                         target="_blank"><span class="wp-block-navigation-item__label">Flappy
                                             PEPE</span></a></li>
                                 <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
-                                        class="wp-block-navigation-item__content" href="https://pepecoin-nodes.com/"
+                                        class="wp-block-navigation-item__content" href="/pages/nodesmap.html"
                                         target="_blank"><span class="wp-block-navigation-item__label">Mapa Pepecoin
                                             Nodiek</span></a></li>
                                 <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
-                                        class="wp-block-navigation-item__content"
-                                        href="https://github.com/bachelor-emgi/electrumx-pep" target="_blank"><span
-                                            class="wp-block-navigation-item__label">ElectrumX v Dockeri</span></a>
+                                        class="wp-block-navigation-item__content" href="/pages/electrumx.html"
+                                        target="_blank"><span class="wp-block-navigation-item__label">ElectrumX v
+                                            Dockeri</span></a>
                                 </li>
                             </ul>
                         </nav>
